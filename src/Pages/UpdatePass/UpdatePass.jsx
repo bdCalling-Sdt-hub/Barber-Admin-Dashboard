@@ -1,9 +1,14 @@
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, Typography } from "antd";
 import React, { useState } from "react";
 import logo from "../../Images/Logo.png";
 import style from "./UpdatePass.module.css";
+import { MdArrowBackIosNew } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+
+const { Title, Paragraph, Text, Link } = Typography;
 
 const UpdatePass = () => {
+  const navigate = useNavigate();
   const [err, setErr] = useState("");
   const onFinish = (values) => {
     const { password, confirmPassword } = values;
@@ -44,16 +49,24 @@ const UpdatePass = () => {
         <img src={logo} alt="" />
       </div>
       <div className={style.formContainer}>
-        <h1
+        <Title
+          level={2}
+          onClick={() => navigate("/otp")}
           style={{
-            color: "#F66D0F",
-            fontWeight: "normal",
-            marginBottom: "30px",
-            textShadow: "#bfbfbf 2px 2px 4px",
+            color: "#0E1116",
+            fontWeight: "700",
+            display: "flex",
+            alignItems: "center",
+            cursor: "pointer",
           }}
         >
+          <MdArrowBackIosNew />
           Update Password
-        </h1>
+        </Title>
+        <Paragraph style={{ marginBottom: "30px" }}>
+          Your password must be 8-10 characters.
+        </Paragraph>
+
         <Form
           name="normal_login"
           className="login-form"
@@ -111,14 +124,14 @@ const UpdatePass = () => {
             <Button
               type="primary"
               htmlType="submit"
-              className="login-form-button"
+              onClick={() => navigate("/")}
               block
               style={{
                 height: "45px",
                 fontWeight: "400px",
                 fontSize: "18px",
                 background: "#F66D0F",
-                marginTop: "100px",
+                marginTop: "40px",
               }}
             >
               Confirm

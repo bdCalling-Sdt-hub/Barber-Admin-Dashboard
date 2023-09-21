@@ -65,7 +65,7 @@ const Email = () => {
             <Button
               type="primary"
               htmlType="submit"
-              className="login-form-button"
+              onClick={() => navigate("/otp")}
               block
               style={{
                 height: "45px",
