@@ -23,7 +23,7 @@ const BlockList = () => {
               <Col span={6}>
                 <div style={style.cardStyle}>
                   <img src={img} alt="" />
-                  <h2 style={{ color: "#000B90", marginBottom: "5px" }}>
+                  <h2 style={{ color: "#F66D0F", marginBottom: "5px" }}>
                     Jack Sparrow
                   </h2>
                   <p>jacks20@gmail.com</p>
@@ -39,7 +39,7 @@ const BlockList = () => {
                     >
                       Cancel
                     </Button>
-                    <Button style={{ background: "#000B90", ...style.cardBtn }}>
+                    <Button style={{ background: "#F66D0F", ...style.cardBtn }}>
                       Approve
                     </Button>
                   </div>

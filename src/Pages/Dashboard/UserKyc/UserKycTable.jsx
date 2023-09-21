@@ -12,7 +12,7 @@ const data = [
     email: "kate@gmail.com",
     contact: " 014845454545",
     type: "pdf",
-    status:<div style={{color:"white",backgroundColor:"#000b90",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
+    status:<div style={{color:"white",backgroundColor:"#F66D0F",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
   },
   {
     name: "Kate Winslate",
@@ -26,7 +26,7 @@ const data = [
     email: "kate@gmail.com",
     contact: " 014845454545",
     type: "pdf",
-    status:<div style={{color:"white",backgroundColor:"#000b90",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
+    status:<div style={{color:"white",backgroundColor:"#F66D0F",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
   },
   {
     name: "Kate Winslate",
@@ -40,7 +40,7 @@ const data = [
     email: "kate@gmail.com",
     contact: " 014845454545",
     type: "pdf",
-    status:<div style={{color:"white",backgroundColor:"#000b90",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
+    status:<div style={{color:"white",backgroundColor:"#F66D0F",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
   },
   {
     name: "Kate Winslate",
@@ -54,7 +54,7 @@ const data = [
     email: "kate@gmail.com",
     contact: " 014845454545",
     type: "pdf",
-    status:<div style={{color:"white",backgroundColor:"#000b90",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
+    status:<div style={{color:"white",backgroundColor:"#F66D0F",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
   },
   {
     name: "Kate Winslate",
@@ -68,7 +68,7 @@ const data = [
     email: "kate@gmail.com",
     contact: " 014845454545",
     type: "pdf",
-    status:<div style={{color:"white",backgroundColor:"#000b90",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
+    status:<div style={{color:"white",backgroundColor:"#F66D0F",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
   },
   {
     name: "Kate Winslate",
@@ -82,7 +82,7 @@ const data = [
     email: "kate@gmail.com",
     contact: " 014845454545",
     type: "pdf",
-    status:<div style={{color:"white",backgroundColor:"#000b90",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
+    status:<div style={{color:"white",backgroundColor:"#F66D0F",textAlign:"center",padding:"10px",borderRadius:"5px",fontWeight:"bold"}}>Approve</div>
   },
   {
     name: "Kate Winslate",

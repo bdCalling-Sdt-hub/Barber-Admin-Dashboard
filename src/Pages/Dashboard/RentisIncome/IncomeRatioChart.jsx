@@ -123,8 +123,8 @@ export default function IncomeRatioChart() {
 
  
     return (
-      <div style={{ width: '100%', border:"3px solid #000b90",borderRadius:"15px",padding:"20px",backgroundColor:"#fff"}}>
-        <h1 style={{marginTop:"10px",marginBottom:"10px",color:"#000b90"}}>Income Ratio Per Day</h1>
+      <div style={{ width: '100%', border:"3px solid #F66D0F",borderRadius:"15px",padding:"20px",backgroundColor:"#fff"}}>
+        <h1 style={{marginTop:"10px",marginBottom:"10px",color:"#F66D0F"}}>Income Ratio Per Day</h1>
 
         <ResponsiveContainer width="100%" height={300}>
           <LineChart
@@ -143,7 +143,7 @@ export default function IncomeRatioChart() {
             <XAxis dataKey="time" />
             <YAxis />
             <Tooltip />
-            <Line type="linear" dataKey="CountOfPeople" stroke="#000b90" fill="#8884d8" />
+            <Line type="linear" dataKey="CountOfPeople" stroke="#F66D0F" fill="#8884d8" />
           </LineChart>
         </ResponsiveContainer>
          

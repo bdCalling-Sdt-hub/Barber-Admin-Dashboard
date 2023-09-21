@@ -46,7 +46,7 @@ const UpdatePass = () => {
       <div className={style.formContainer}>
         <h1
           style={{
-            color: "#000B90",
+            color: "#F66D0F",
             fontWeight: "normal",
             marginBottom: "30px",
             textShadow: "#bfbfbf 2px 2px 4px",
@@ -117,7 +117,7 @@ const UpdatePass = () => {
                 height: "45px",
                 fontWeight: "400px",
                 fontSize: "18px",
-                background: "#000B90",
+                background: "#F66D0F",
                 marginTop: "100px",
               }}
             >

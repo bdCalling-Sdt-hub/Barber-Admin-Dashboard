@@ -13,7 +13,10 @@
   border-radius: 100%;
 }
 
-
+.logo img {
+  width: 120px;
+  height: 152px;
+}
 
 
 

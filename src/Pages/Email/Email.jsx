@@ -18,7 +18,7 @@ const Email = () => {
         <Title
           level={2}
           style={{
-            color: "#000B90",
+            color: "#F66D0F",
             fontWeight: "normal",
             marginBottom: "10px",
             textShadow: "#bfbfbf 2px 2px 4px",
@@ -63,7 +63,7 @@ const Email = () => {
                 height: "45px",
                 fontWeight: "400px",
                 fontSize: "18px",
-                background: "#000B90",
+                background: "#F66D0F",
                 alignSelf: "bottom",
                 marginTop: "130px",
               }}

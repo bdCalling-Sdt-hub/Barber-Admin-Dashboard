@@ -24,10 +24,9 @@ const Signin = () => {
       <div className={style.formContainer}>
         <h2
           style={{
-            color: "#000B90",
-            fontWeight: "normal",
-            marginBottom: "30px",
-            textShadow: "#bfbfbf 2px 2px 4px",
+            color: "#0E1116",
+            fontWeight: "700",
+            marginBottom: "36px",
           }}
         >
           Sign In
@@ -76,7 +75,7 @@ const Signin = () => {
                 },
               ]}
             >
-              <Input
+              <Input.Password
                 prefix={<LockOutlined className="site-form-item-icon" />}
                 type="password"
                 placeholder="Enter your password"
@@ -85,17 +84,14 @@ const Signin = () => {
             </Form.Item>
           </div>
           <div className={style.rememberAndPass}>
-            <Form.Item name="remember" valuePropName="checked" noStyle>
-              <Checkbox>Remember me</Checkbox>
-            </Form.Item>
-
+            <div></div>
             <a
               className="login-form-forgot"
-              style={{ color: "#000B90" }}
+              style={{ color: "#F66D0F", fontWeight: "600" }}
               href=""
               onClick={handleForget}
             >
-              Forgot password
+              Forgot password?
             </a>
           </div>
 
@@ -103,14 +99,16 @@ const Signin = () => {
             <Button
               type="primary"
               htmlType="submit"
-              className="login-form-button"
+              onClick={() => {
+                navigate("/");
+              }}
               block
               style={{
                 height: "45px",
                 fontWeight: "400px",
                 fontSize: "18px",
-                background: "#000B90",
-                marginTop: "60px",
+                background: "#F66D0F",
+                marginTop: "30px",
               }}
             >
               Sign In

@@ -259,7 +259,7 @@ const Setting = () => {
               <Button
                 type="text"
                 className="login-form-forgot"
-                style={{ color: "#000B90" }}
+                style={{ color: "#F66D0F" }}
                 onClick={() => (setVerify(true), setOpenChangePassModel(false))}
               >
                 Forgot password
@@ -276,7 +276,7 @@ const Setting = () => {
                   height: "45px",
                   fontWeight: "400px",
                   fontSize: "18px",
-                  background: "#000B90",
+                  background: "#F66D0F",
                   marginTop: "60px",
                 }}
               >
@@ -291,7 +291,7 @@ const Setting = () => {
             <Title
               level={2}
               style={{
-                color: "#000B90",
+                color: "#F66D0F",
                 fontWeight: "normal",
                 marginBottom: "30px",
                 textShadow: "#bfbfbf 2px 2px 4px",
@@ -334,7 +334,7 @@ const Setting = () => {
 
               <a
                 className="login-form-forgot"
-                style={{ color: "#000B90" }}
+                style={{ color: "#F66D0F" }}
                 href=""
               >
                 Resend
@@ -348,7 +348,7 @@ const Setting = () => {
                 height: "45px",
                 fontWeight: "400px",
                 fontSize: "18px",
-                background: "#000B90",
+                background: "#F66D0F",
                 color: "#fff",
                 alignSelf: "bottom",
                 marginTop: "130px",
@@ -364,7 +364,7 @@ const Setting = () => {
             <Title
               level={2}
               style={{
-                color: "#000B90",
+                color: "#F66D0F",
                 fontWeight: "normal",
                 marginBottom: "30px",
                 textShadow: "#bfbfbf 2px 2px 4px",
@@ -436,7 +436,7 @@ const Setting = () => {
                   height: "45px",
                   fontWeight: "400px",
                   fontSize: "18px",
-                  background: "#000B90",
+                  background: "#F66D0F",
                   marginTop: "100px",
                 }}
               >
@@ -457,7 +457,7 @@ const Setting = () => {
           okButtonProps={{
             style: {
               width: "100%",
-              backgroundColor: "#000b90",
+              backgroundColor: "#F66D0F",
               height: "40px",
               marginLeft: "-20px",
             },

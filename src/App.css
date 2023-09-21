@@ -11,17 +11,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif !important;
+  font-family: Montserrat !important;
 }
 
 .ant-layout-sider-children .ant-menu-item-selected {
-  color: #000b90;
+  color: #F66D0F !important;
   font-weight: bold;
 }
 
 :where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper .ant-table-thead>tr>th,
 :where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper .ant-table-thead>tr>td {
-  background: #000b90;
+  background: #F66D0F;
   color: white;
   border: 0;
+}
+
+.ant-layout-sider-children {
+  background:  #364153;
+}
+
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light.css-dev-only-do-not-override-17a39f8 {
+  background: transparent;
 }

@@ -62,7 +62,7 @@ const Wallet = () => {
       padding: "40px",
       borderRadius: "15px",
       height: "300px",
-      border: "2px solid #000B90",
+      border: "2px solid #F66D0F",
     },
     cardContainer: {
       backgroundColor: "#fff",
@@ -74,7 +74,7 @@ const Wallet = () => {
       display: "flex",
       alignItems: "center",
       gap: "4px",
-      background: "#000B90",
+      background: "#F66D0F",
       color: "white",
       height: "40px",
     },
@@ -148,7 +148,7 @@ const Wallet = () => {
               size={["100%", 20]}
               showInfo={false}
               status="active"
-              strokeColor={"#000B90"}
+              strokeColor={"#F66D0F"}
             />
             <div
               style={{
@@ -179,7 +179,7 @@ const Wallet = () => {
               padding: "30px",
               borderRadius: "15px",
               backgroundColor: "#fff",
-              border: "2px solid #000B90",
+              border: "2px solid #F66D0F",
             }}
           >
             <Pie {...config} />
@@ -195,7 +195,7 @@ const Wallet = () => {
             marginBottom: "30px",
           }}
         >
-          <Title level={3} style={{ color: "#000B90" }}>
+          <Title level={3} style={{ color: "#F66D0F" }}>
             Card List
           </Title>
           <Button style={style.addCardBtn} onClick={() => showModal()}>

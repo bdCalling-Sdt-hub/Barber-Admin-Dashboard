@@ -150,7 +150,7 @@ const Dashboard = () => {
       <Menu.Item disabled>
         <h2
           style={{
-            color: "#000b90",
+            color: "#F66D0F",
             fontWeight: "500",
             borderBottom: "1px solid #e6e7f4",
             paddingBottom: "20px",
@@ -178,7 +178,7 @@ const Dashboard = () => {
           style={{
             height: "50px",
             backgroundColor: "#e6e7f4",
-            color: "#000b90",
+            color: "#F66D0F",
             fontSize: "18px",
             fontWeight: "bold",
           }}
@@ -206,7 +206,7 @@ const Dashboard = () => {
       >
         <div className="demo-logo-vertical" />
         <div
-          className="logo"
+          className={Styles.logo}
           style={{
             display: "flex",
             justifyContent: "center",

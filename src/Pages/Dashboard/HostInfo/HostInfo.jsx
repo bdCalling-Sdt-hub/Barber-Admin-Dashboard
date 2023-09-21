@@ -13,7 +13,7 @@ const HostInfo = () => (
       <Input style={{ height: "44px" }} />
       <Button
         style={{
-          background: "#000B90",
+          background: "#F66D0F",
           color: "white",
           height: 45,
           width: "180px",

@@ -113,7 +113,7 @@ const HostRequest = () => {
         <Input style={{ height: "44px" }} />
         <Button
           style={{
-            background: "#000B90",
+            background: "#F66D0F",
             color: "white",
             height: 45,
             width: "180px",
@@ -143,7 +143,7 @@ const HostRequest = () => {
                 <Col span={6}>
                   <div style={style.cardStyle}>
                     <img src={img} alt="" />
-                    <h2 style={{ color: "#000B90", marginBottom: "5px" }}>
+                    <h2 style={{ color: "#F66D0F", marginBottom: "5px" }}>
                       Jack Sparrow
                     </h2>
                     <p>jacks20@gmail.com</p>
@@ -160,7 +160,7 @@ const HostRequest = () => {
                         Cancel
                       </Button>
                       <Button
-                        style={{ background: "#000B90", ...style.cardBtn }}
+                        style={{ background: "#F66D0F", ...style.cardBtn }}
                       >
                         Approve
                       </Button>

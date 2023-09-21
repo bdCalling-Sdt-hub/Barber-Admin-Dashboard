@@ -28,7 +28,7 @@ function StripeBills() {
               style={{
                 height: "50px",
                 width: "300px",
-                backgroundColor: "#000b90",
+                backgroundColor: "#F66D0F",
                 color: "#fff",
                 fontSize: "20px",
               }}
