@@ -2,10 +2,13 @@ import { Button, Form, Input, Typography } from "antd";
 import React from "react";
 import logo from "../../Images/Logo.png";
 import style from "./Email.module.css";
+import { MdArrowBackIosNew } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
 const Email = () => {
+  const navigate = useNavigate();
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
   };
@@ -17,21 +20,26 @@ const Email = () => {
       <div className={style.formContainer}>
         <Title
           level={2}
+          onClick={() => navigate("/signin")}
           style={{
-            color: "#F66D0F",
-            fontWeight: "normal",
-            marginBottom: "10px",
-            textShadow: "#bfbfbf 2px 2px 4px",
+            color: "#0E1116",
+            fontWeight: "700",
+            display: "flex",
+            alignItems: "center",
+            cursor: "pointer",
           }}
         >
-          Email Verification
+          <MdArrowBackIosNew />
+          Forgot password
         </Title>
         <Paragraph style={{ marginBottom: "30px" }}>
-          We'll send a verification code to your email. Check your inbox and
-          enter the code here.
+          Please enter your email address for recover your password.
         </Paragraph>
 
         <Form>
+          <div className={style.formImage}>
+            <img src="https://i.ibb.co/D7s0Tdr/Icon.png" alt="" />
+          </div>
           <div>
             <label htmlFor="email" className={style.label}>
               Email
@@ -65,10 +73,10 @@ const Email = () => {
                 fontSize: "18px",
                 background: "#F66D0F",
                 alignSelf: "bottom",
-                marginTop: "130px",
+                marginTop: "30px",
               }}
             >
-              Verify
+              Send OTP
             </Button>
           </Form.Item>
         </Form>
