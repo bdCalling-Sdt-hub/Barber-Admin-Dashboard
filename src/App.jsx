@@ -27,6 +27,7 @@ import SettingPage from "./Pages/Dashboard/Setting/SettingPage/SettingPage";
 import StripeBills from "./Pages/Dashboard/StripeBills/StripeBills";
 import UserKyc from "./Pages/Dashboard/UserKyc/UserKyc";
 import UserPayment from "./Pages/Dashboard/UserPayment/UserPayment";
+import Message from "./Pages/Dashboard/Message/Message";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
               <Route path="/user-kyc" element={<UserKyc />} />
               <Route path="/car-kyc" element={<CarKyc />} />
               <Route path="/setting" element={<Setting />}></Route>
+              <Route path="/message" element={<Message />}></Route>
               <Route path="/setting/:dynamic" element={<SettingPage />} />
             </Route>
 

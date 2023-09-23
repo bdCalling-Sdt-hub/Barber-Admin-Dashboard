@@ -1,0 +1,42 @@
+.navigateBtn {
+  background: #F66D0F;
+  color: white;
+}
+
+.sendMessage::placeholder {
+  color: #CFCFD0;
+  padding-left: 30;
+  padding-top: 30;
+}
+
+.sendAllButton {
+  margin-top: 30px;
+  width: -webkit-fill-available;
+  background-color: #F66D0F;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.h2Design {
+  margin-top: 50px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.searchMessageInput {
+  background-color: #364153;
+}
+
+.searchMessageInput::placeholder {
+  color: var(--dashboard-text-paragraph, #CFCFD0);
+  /* Text/H4-18 R */
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
