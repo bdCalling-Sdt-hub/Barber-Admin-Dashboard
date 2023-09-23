@@ -8,7 +8,7 @@ import { MdPayment } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 
 import { FaUsers } from "react-icons/fa";
-import { IoWalletOutline,IoCutOutline } from "react-icons/io5";
+import { IoWalletOutline, IoCutOutline } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { TbCalendarCheck, TbMessageCircle2Filled } from "react-icons/tb";
 
@@ -364,7 +364,7 @@ const Dashboard = () => {
           <div className="" style={{ display: "flex", alignItems: "center" }}>
             <Button
               type="text"
-              icon={collapsed ? <MenuOutlined  /> : <MenuOutlined />}
+              icon={collapsed ? <MenuOutlined /> : <MenuOutlined />}
               onClick={() => setCollapsed(!collapsed)}
               style={{
                 marginLeft: collapsed ? "125px" : "360px",
@@ -372,7 +372,7 @@ const Dashboard = () => {
                 width: 45,
                 height: 45,
                 marginRight: "10px",
-                color:"white"
+                color: "white",
               }}
             />
             <h2>{t("header.title")}</h2>
@@ -417,7 +417,9 @@ const Dashboard = () => {
                   pointAtCenter: true,
                 }}
               >
-                <IoMdNotificationsOutline style={{ fontSize: "30px", color: "white" }} />
+                <IoMdNotificationsOutline
+                  style={{ fontSize: "30px", color: "white" }}
+                />
               </Dropdown>
             </div>
             <div className={Styles.profile}>
