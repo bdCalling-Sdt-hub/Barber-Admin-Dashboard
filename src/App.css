@@ -14,7 +14,7 @@
   font-family: Montserrat !important;
 }
 
-body{
+body {
   color: white;
 }
 
@@ -51,9 +51,43 @@ header.ant-layout-header.css-dev-only-do-not-override-17a39f8 {
   background: #364153 !important;
   color: white !important;
 }
+
 :where(.css-dev-only-do-not-override-17a39f8).ant-layout {
   background: #0E1116;
 }
+
 main.ant-layout-content.css-dev-only-do-not-override-17a39f8 {
   background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-menu-light .ant-menu-item-selected {
+  background: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-menu-light .ant-menu-item-selected a {
+  color: #F66D0F !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-menu-light .ant-menu-item-selected .ant-menu-item-icon {
+  color: #F66D0F !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-menu-light {
+  background: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-menu-light.ant-menu-submenu>.ant-menu {
+  background: #364153 !important;
+}
+
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light.css-dev-only-do-not-override-17a39f8 {
+  background: #364153 !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title {
+  color: #F66D0F !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title span {
+  color: #F66D0F !important;
 }
