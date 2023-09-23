@@ -179,7 +179,7 @@ const Dashboard = () => {
           block
           style={{
             height: "50px",
-            backgroundColor: "#e6e7f4",
+            // backgroundColor: "#e6e7f4",
             color: "#F66D0F",
             fontSize: "18px",
             fontWeight: "bold",
@@ -203,7 +203,7 @@ const Dashboard = () => {
           position: "fixed",
           height: "100vh",
           zIndex: 2,
-          backgroundColor: "white",
+          // backgroundColor: "white",
         }}
       >
         <div className="demo-logo-vertical" />
@@ -219,8 +219,8 @@ const Dashboard = () => {
         >
           <img
             src={rentiLogo}
-            height={collapsed ? "40px" : "150px"}
-            width={collapsed ? "40px" : "150px"}
+            height={collapsed ? "40px" : "152px"}
+            width={collapsed ? "40px" : "120px"}
           />
         </div>
 
@@ -349,7 +349,7 @@ const Dashboard = () => {
           </Menu.Item>
 
           <Menu.Item
-            key="7"
+            key="8"
             icon={
               <TbMessageCircle2Filled
                 style={{ fontSize: "14px", color: "white" }}
