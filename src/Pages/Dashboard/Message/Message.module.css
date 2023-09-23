@@ -19,7 +19,6 @@
 }
 
 .h2Design {
-  margin-top: 50px;
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -31,11 +30,67 @@
   background-color: #364153;
 }
 
-.searchMessageInput::placeholder {
-  color: var(--dashboard-text-paragraph, #CFCFD0);
-  /* Text/H4-18 R */
+.searchMessageButton {
+  margin-top: 30px;
+}
+
+.recentMessage {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  width: -webkit-fill-available;
+  border-radius: 8px;
+  border: 1px solid var(--Stroke, #535770);
+  background: var(--background-card-bg, #364153);
+}
+
+.recentMessageImage {
+  margin-left: 30px;
+  border-radius: 40px;
+  background: lightgray 50% / cover no-repeat;
+}
+.recentMessageInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.recentMessageSender {
+  width: fit-content;
+  margin-left: 30px;
+  color: var(--text-white, #FFF);
+  /* Text/H6-14 R */
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.recentMessageDetails {
+  color: var(--text-white, #FFF);
+  /* Text/H6-14 R */
+  width: 537px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recentMessageIcon {
+  background-color: #364153;
+  margin-right: 30px;
+  margin-top: 15px;
+  color: var(--text-white, #FFF);
+  /* Text/H6-14 R */
+  font-family: Montserrat;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
