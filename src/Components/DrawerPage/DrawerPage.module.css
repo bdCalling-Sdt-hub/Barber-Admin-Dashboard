@@ -1,0 +1,33 @@
+.appointmentInfo{
+    display: flex;
+    flex-direction: row;
+    width: 462px;
+    justify-content: space-between;
+}
+.appointmentInfo p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.appointmentInfoLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.appointmentInfoLeft p{
+    font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.appointmentInfoRight{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}

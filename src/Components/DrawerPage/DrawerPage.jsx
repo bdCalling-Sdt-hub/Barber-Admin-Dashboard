@@ -5,6 +5,8 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import cardImg from "../../Images/Cards.png";
 import img from "../../Images/image 1.png";
+import styles from "./DrawerPage.module.css";
+
 const { Title } = Typography;
 
 const { Option } = Select;
@@ -384,29 +386,28 @@ const DrawerPage = (props) => {
         <div>
           <div style={{ display: "flex", gap: "15px" }}>
             <div>
-              <img width={120} src="https://i.imgur.com/JFHjdNr.jpg" alt="" />
-            </div>
-            <div style={{ marginTop: "-7px" }}>
-              <p style={{ fontSize: "20px" }}>{props.invoiceData.username}</p>
-              <p>INE: SNHRM570818MDFPM10</p>
-              <p>Trip Completes:{props.invoiceData.status.length}</p>
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "2px" }}
-              >
-                <AiFillStar color="#fba91d" />
-                <span>4.8</span>
+              <div>
+                <h3>Appointment Info</h3>
+                <div className={styles.appointmentInfo}>
+                  <div className={styles.appointmentInfoLeft}>
+                    <p>Appointment Status :</p>
+                    <p>Date & Time :</p>
+                    <p>Total amount :</p>
+                    <p>Barber payment :</p>
+                  </div>
+                  <div className={styles.appointmentInfoRight}>
+                    <p>Completed</p>
+                    <p>06 Sep, 2023- 4:30 PM</p>
+                    <p>$120</p>
+                    <p>$50</p>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div>
+                {/* here main contaent */}
               </div>
             </div>
-          </div>
-          <div>
-            <Title level={4}>
-              Trip Details{" "}
-              <Badge
-                className="site-badge-count-109"
-                count={"complete"}
-                style={{ backgroundColor: "#E6F6F4", color: "#00A991" }}
-              />
-            </Title>
           </div>
           <div
             style={{

@@ -1,19 +1,15 @@
 /* eslint-disable no-unused-vars */
 import { MenuOutlined, SettingOutlined } from "@ant-design/icons";
 import { Button, Dropdown, Layout, Menu, Select, theme } from "antd";
-
 import { Divider } from "antd";
 import { GiReceiveMoney } from "react-icons/gi";
 import { MdPayment } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
-
 import { FaUsers } from "react-icons/fa";
 import { IoWalletOutline, IoCutOutline } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { TbCalendarCheck, TbMessageCircle2Filled } from "react-icons/tb";
-
 import React, { useEffect, useState } from "react";
-
 import { useTranslation } from "react-i18next";
 import { Link, Outlet } from "react-router-dom";
 import rentiLogo from "../../Images/renti-logo.png";

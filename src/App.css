@@ -157,3 +157,32 @@ ul.ant-pagination.ant-table-pagination.ant-table-pagination-right.css-dev-only-d
 :where(.css-dev-only-do-not-override-17a39f8).ant-pagination .ant-pagination-disabled .ant-pagination-item-link {
   color: white !important;
 }
+:where(.css-dev-only-do-not-override-17a39f8).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  background: transparent !important;
+  color: white !important;
+  border: none !important;
+
+}
+
+/* side modal */
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-wrapper-body{
+  background: #364153;
+}
+:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header{
+  background: #F66D0F !important;
+  color: white;
+}
+:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header span, h5{
+  color: white;
+}
+:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header h5{
+  color: white;
+}
+button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default{
+  background: transparent !important;
+}
+
+button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default.ant-btn-block{
+  background: #F66D0F !important;
+}

@@ -234,7 +234,7 @@ const InvoiceTable = () => {
               }}
               onClick={closeDrawer}
             >
-              <CloseOutlined />
+              <CloseOutlined color="black" />
             </Button>
           </Space>
         }
