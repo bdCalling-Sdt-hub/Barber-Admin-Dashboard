@@ -279,7 +279,7 @@ const Dashboard = () => {
 
           <SubMenu
             style={{ fontSize: "16px" }}
-            key="4"
+            key="5"
             icon={
               <TbCalendarCheck style={{ fontSize: "14px", color: "white" }} />
             }
@@ -294,7 +294,7 @@ const Dashboard = () => {
           </SubMenu>
 
           <Menu.Item
-            key="5"
+            key="6"
             icon={
               <svg
                 width="18"
@@ -331,7 +331,7 @@ const Dashboard = () => {
           </Menu.Item>
 
           <Menu.Item
-            key="6"
+            key="7"
             icon={<FaUsers style={{ fontSize: "14px", color: "white" }} />}
           >
             <Link to="/rent-info" style={{ fontSize: "16px" }}>
@@ -340,7 +340,7 @@ const Dashboard = () => {
           </Menu.Item>
 
           <Menu.Item
-            key="7"
+            key="8"
             icon={<FaUsers style={{ fontSize: "14px", color: "white" }} />}
           >
             <Link to="/car-info" style={{ fontSize: "16px" }}>
@@ -349,7 +349,7 @@ const Dashboard = () => {
           </Menu.Item>
 
           <Menu.Item
-            key="8"
+            key="9"
             icon={
               <TbMessageCircle2Filled
                 style={{ fontSize: "14px", color: "white" }}
@@ -364,7 +364,7 @@ const Dashboard = () => {
           <Divider />
 
           <Menu.Item
-            key="9"
+            key="10"
             icon={
               <SettingOutlined style={{ fontSize: "14px", color: "white" }} />
             }
