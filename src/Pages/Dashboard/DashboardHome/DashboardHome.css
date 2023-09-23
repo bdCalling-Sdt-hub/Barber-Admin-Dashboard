@@ -36,6 +36,9 @@
  padding:20px 0px;
    
 }
+.dashboardContainer{
+    color: white;
+}
 
 @media only screen and (max-width: 1550px) {
 

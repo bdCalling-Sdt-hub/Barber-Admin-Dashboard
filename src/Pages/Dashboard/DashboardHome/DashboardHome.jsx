@@ -17,100 +17,108 @@ function DashboardHome() {
   };
 
   return (
-    <div>
-    <h1 style={{fontSize:"30px",marginBottom:"20px"}}>Dashboard overview</h1>
-    <Row gutter={16} style={{marginBottom:"20px"}}>
-      <Col className="gutter-row" style={{marginBottom:"10px"}} xs={{span:24}} sm={{span:24}} md={{span:12}} lg={{span:6}}>
-         <div  className='income-card'>
-            <LiaHandHoldingUsdSolid style={{fontSize:"50px"}}/>
-            <h1 style={{fontSize:"1.5rem",fontWeight:"300",marginTop:"15px",marginBottom:"15px"}}>Today's income</h1>
-            <h3 style={{fontSize:"1.5rem",letterSpacing:".2rem",marginBottom:"15px"}}>$ 250.00</h3>
-         </div>
-      </Col>
-      <Col className="gutter-row" style={{marginBottom:"10px"}} xs={{span:24}} sm={{span:24}} md={{span:12}} lg={{span:6}}>
-         <div className='income-card'>
-            <LiaHandHoldingUsdSolid style={{fontSize:"50px"}}/>
-            <h1 style={{fontSize:"1.5rem",fontWeight:"300",marginTop:"15px",marginBottom:"15px"}}>Weekly income</h1>
-            <h3 style={{fontSize:"1.5rem",letterSpacing:"1px",marginBottom:"15px"}}>$ 250.00</h3>
-        </div>
-      </Col>
-      <Col className="gutter-row" style={{marginBottom:"10px"}} xs={{span:24}} sm={{span:24}} md={{span:12}} lg={{span:6}}>
-         <div  className='income-card'>
-            <LiaHandHoldingUsdSolid style={{fontSize:"50px"}}/>
-            <h1 style={{fontSize:"1.5rem",fontWeight:"300",marginTop:"15px",marginBottom:"15px"}}>Monthly income</h1>
-            <h3 style={{fontSize:"1.5rem",letterSpacing:"1px",marginBottom:"15px"}}>$ 250.00</h3>
-         </div>
-      </Col>
-      <Col className="gutter-row" style={{marginBottom:"10px"}} xs={{span:24}} sm={{span:24}} md={{span:12}} lg={{span:6}}>
-         <div  className='income-card'>
-            <LiaHandHoldingUsdSolid style={{fontSize:"50px"}}/>
-            <h1 style={{fontSize:"1.5rem",fontWeight:"300",marginTop:"15px",marginBottom:"15px"}}>All time income</h1>
-            <h3 style={{fontSize:"1.5rem",letterSpacing:"1px",marginBottom:"15px"}}>$ 250.00</h3>
-        </div>
-      </Col>
-    </Row>
+    <div className="dashboardContainer">
+      <Row>
+        <h2
+          style={{
+            fontSize: "25px",
+            marginBottom: "10px",
+            fontWeight: "normal",
+          }}
+        >
+          Rent Information
+        </h2>
+      </Row>
 
-    <Row gutter={16}>
-      <Col className="gutter-row" style={{marginBottom:"10px"}} xs={{span:24}} sm={{span:24}} md={{span:12}} lg={{span:6}}>
-         <div  className='rent-status' style={{backgroundColor:"#fff"}}>
-            <MdCarRental style={{fontSize:"1.5rem",color:"#F66D0F"}}/>
-            <div className='single-status'>
-                <h2 style={{fontSize:"1.5rem",fontWeight:"600",marginTop:"10px",marginBottom:"10px",color:"#F66D0F"}}>Today's Rent</h2>
-                <h3 style={{fontSize:"1.5rem",letterSpacing:"1px",color:"gray"}}>32</h3>
-            </div>
-            
-         </div>
-      </Col>
-      <Col className="gutter-row" style={{marginBottom:"10px"}} xs={{span:24}} sm={{span:24}} md={{span:12}} lg={{span:6}}>
-      <div  className='rent-status' style={{backgroundColor:"#fff"}}>
-            <GrHistory style={{fontSize:"1.5rem",color:"#F66D0F"}}/>
-            <div className='single-status'>
-                <h2 style={{fontSize:"1.5rem",fontWeight:"600",marginTop:"10px",marginBottom:"10px",color:"#F66D0F"}}>Pendings</h2>
-                <h3 style={{fontSize:"1.5rem",letterSpacing:"1px",color:"gray"}}>40</h3>
-            </div>
-            
-         </div>
-      </Col>
-      <Col className="gutter-row" style={{marginBottom:"10px"}} xs={{span:24}} sm={{span:24}} md={{span:12}} lg={{span:6}}>
-      <div  className='rent-status' style={{backgroundColor:"#fff"}}>
-            <SlRefresh style={{fontSize:"1.5rem",color:"#F66D0F"}}/>
-            <div className='single-status'>
-                <h2 style={{fontSize:"1.5rem",fontWeight:"600",marginTop:"10px",marginBottom:"10px",color:"#F66D0F"}}>Ongoing</h2>
-                <h3 style={{fontSize:"1.5rem",letterSpacing:"1px",color:"gray"}}>103</h3>
-            </div>
-            
-         </div>
-      </Col>
-      <Col className="gutter-row" style={{marginBottom:"10px"}} xs={{span:24}} sm={{span:24}} md={{span:12}} lg={{span:6}}>
-        <div className='rent-status' style={{backgroundColor:"#fff"}}>
-            <BsFillCheckCircleFill style={{fontSize:"1.5rem",color:"#F66D0F"}}/>
-            <div className='single-status'>
-                <h2 style={{fontSize:"1.5rem",fontWeight:"600",marginTop:"10px",marginBottom:"10px",color:"#F66D0F"}}>Complete</h2>
-                <h3 style={{fontSize:"1.5rem",letterSpacing:"1px",color:"gray"}}>562</h3>
-            </div>
-            
-         </div>
-      </Col>
-    </Row>
-
-    
-
-      <Row style={{ marginTop: "20px" }} gutter={24}>
-        <Col lg={{ span: 12 }}>
-          <DailyRentChart />
+      <Row gutter={16} style={{ marginBottom: "20px" }}>
+        <Col
+          className="gutter-row"
+          style={{ marginBottom: "10px" }}
+          xs={{ span: 24 }}
+          sm={{ span: 24 }}
+          md={{ span: 12 }}
+          lg={{ span: 8 }}
+        >
+          <div style={{ background: "#7CC605",width:"390px",height:"200px", paddingTop:"50px" }} className="rent-card complete">
+            <h3
+              style={{
+                fontSize: "1.5rem",
+                letterSpacing: ".2rem",
+                marginBottom: "15px",
+              }}
+            >
+              110
+            </h3>
+            <h1
+              style={{
+                fontSize: "1.5rem",
+                fontWeight: "normal",
+                marginTop: "15px",
+                marginBottom: "15px",
+              }}
+            >
+              Completed
+            </h1>
+          </div>
         </Col>
-        <Col lg={{ span: 12 }}>
-          <div
-            className=""
-            style={{
-              border: "3px solid #F66D0F",
-              padding: "30px",
-              borderRadius: "15px",
-              backgroundColor: "#fff",
-            }}
-          >
-            <h1 style={{ color: "#F66D0F" }}>Most using car</h1>
-            <MostRentCarChart />
+        <Col
+          className="gutter-row"
+          style={{ marginBottom: "10px" }}
+          xs={{ span: 24 }}
+          sm={{ span: 24 }}
+          md={{ span: 12 }}
+          lg={{ span: 8 }}
+        >
+          <div style={{ background: "#FDB600",width:"390px",height:"200px", paddingTop:"50px" }} className="rent-card reserved">
+            <h3
+              style={{
+                fontSize: "1.5rem",
+                letterSpacing: "1px",
+                marginBottom: "15px",
+              }}
+            >
+              60
+            </h3>
+            <h1
+              style={{
+                fontSize: "1.5rem",
+                fontWeight: "300",
+                marginTop: "15px",
+                marginBottom: "15px",
+              }}
+            >
+              Pending
+            </h1>
+          </div>
+        </Col>
+        <Col
+          className="gutter-row"
+          style={{ marginBottom: "10px" }}
+          xs={{ span: 24 }}
+          sm={{ span: 24 }}
+          md={{ span: 12 }}
+          lg={{ span: 8 }}
+        >
+          <div style={{ background: "#FC4400",width:"390px",height:"200px", paddingTop:"50px" }} className="rent-card canceled">
+            <h3
+              style={{
+                fontSize: "1.5rem",
+                letterSpacing: "1px",
+                marginBottom: "15px",
+              }}
+            >
+              20
+            </h3>
+            <h1
+              style={{
+                fontSize: "1.5rem",
+                fontWeight: "300",
+                marginTop: "15px",
+                marginBottom: "15px",
+              }}
+            >
+              Cancelled
+            </h1>
           </div>
         </Col>
       </Row>
@@ -119,7 +127,7 @@ function DashboardHome() {
         <h2
           style={{ fontSize: "25px", margin: "30px 0px", fontWeight: "normal" }}
         >
-          Recent Earnings
+          Recent Appointments
         </h2>
       </Row>
       <InvoiceTable />
