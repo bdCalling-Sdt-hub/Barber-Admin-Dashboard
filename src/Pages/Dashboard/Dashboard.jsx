@@ -356,7 +356,7 @@ const Dashboard = () => {
               />
             }
           >
-            <Link to="/car-info" style={{ fontSize: "16px" }}>
+            <Link to="/message" style={{ fontSize: "16px" }}>
               {t("message")}
             </Link>
           </Menu.Item>

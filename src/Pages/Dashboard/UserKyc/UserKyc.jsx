@@ -13,7 +13,7 @@ function UserKyc() {
              <Col lg={{span:24}}>
                 <div className='' style={{display:"flex",gap:"15px"}}>
                     <Input size="large" placeholder="Search by name/email/phone" prefix={<SearchOutlined style={{color:"#cccccc"}}/>} />
-                    <Button style={{height:"50px",width:"300px",backgroundColor:"#F66D0F",color:"#fff",fontSize:"20px"}}>Search</Button>
+                    <Button style={{height:"60px",width:"200px",backgroundColor:"#F66D0F",color:"#fff",fontSize:"20px"}}>Search</Button>
                 </div>
              </Col>
          </Row>
