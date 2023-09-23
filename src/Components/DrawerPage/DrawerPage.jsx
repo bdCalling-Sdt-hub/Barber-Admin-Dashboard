@@ -385,7 +385,7 @@ const DrawerPage = (props) => {
       {props.invoiceData && (
         <div>
           <div style={{ display: "flex", gap: "15px" }}>
-            <div>
+            <div className={styles.appointmentMainContainer}>
               <div>
                 <h3>Appointment Info</h3>
                 <div className={styles.appointmentInfo}>
