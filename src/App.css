@@ -47,6 +47,27 @@ span.ant-menu-title-content {
   line-height: normal;
 }
 
+/* INPUT */
+:where(.css-dev-only-do-not-override-17a39f8).ant-input-affix-wrapper {
+  background: #364153;
+  color: white;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-input:placeholder-shown {
+  background: #364153;
+  color: #CFCFD0;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-input-affix-wrapper>input.ant-input:focus {
+  box-shadow: none !important;
+  background: transparent;
+  color: white;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-input-affix-wrapper>input.ant-input::placeholder {
+  color: #CFCFD0;
+}
+
 header.ant-layout-header.css-dev-only-do-not-override-17a39f8 {
   background: #364153 !important;
   color: white !important;
@@ -91,3 +112,24 @@ ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light.css-dev-only-do-not-ove
 :where(.css-dev-only-do-not-override-17a39f8).ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title span {
   color: #F66D0F !important;
 }
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper .ant-table-thead>tr>th {
+  color: #F66D0F !important;
+  color: white !important;
+  border: 0;
+}
+
+tr.ant-table-row.ant-table-row-level-0 {
+  color: white !important;
+  background: #364153 !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper .ant-table-tbody>tr>td.ant-table-cell-row-hover {
+  background: #364153 !important;
+  color: white !important;
+}
+
+/* :where(.css-dev-only-do-not-override-17a39f8)[class^="ant-table"] [class^="ant-table"]{
+  background: #364153 !important;
+  color: white !important;
+} */
