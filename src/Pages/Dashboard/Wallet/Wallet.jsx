@@ -58,14 +58,14 @@ const Wallet = () => {
 
   const style = {
     progContainer: {
-      backgroundColor: "#fff",
+      backgroundColor: "#364153",
       padding: "40px",
       borderRadius: "15px",
       height: "300px",
       border: "2px solid #F66D0F",
     },
     cardContainer: {
-      backgroundColor: "#fff",
+      backgroundColor: "#364153",
       padding: "40px",
       borderRadius: "15px",
       marginTop: "40px",
@@ -86,7 +86,7 @@ const Wallet = () => {
     },
     cardBtn: {
       width: "100%",
-      border: "1px solid #dfdfdf",
+      border: "1px solid #364153",
       height: "35px",
     },
   };
@@ -178,7 +178,7 @@ const Wallet = () => {
             style={{
               padding: "30px",
               borderRadius: "15px",
-              backgroundColor: "#fff",
+              backgroundColor: "#364153",
               border: "2px solid #F66D0F",
             }}
           >
