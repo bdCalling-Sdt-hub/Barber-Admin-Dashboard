@@ -257,7 +257,7 @@ const Dashboard = () => {
             key="3"
             icon={<MdPayment style={{ fontSize: "14px", color: "white" }} />}
           >
-            <Link to="/" style={{ fontSize: "16px" }}>
+            <Link to="/payment" style={{ fontSize: "16px" }}>
               {t("payment.title")}
             </Link>
           </Menu.Item>
@@ -267,7 +267,7 @@ const Dashboard = () => {
               <IoWalletOutline style={{ fontSize: "14px", color: "white" }} />
             }
           >
-            <Link to="/" style={{ fontSize: "16px" }}>
+            <Link to="/wallet" style={{ fontSize: "16px" }}>
               {t("wallet")}
             </Link>
           </Menu.Item>

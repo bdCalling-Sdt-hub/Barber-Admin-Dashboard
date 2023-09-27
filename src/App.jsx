@@ -29,6 +29,7 @@ import UserKyc from "./Pages/Dashboard/UserKyc/UserKyc";
 import UserPayment from "./Pages/Dashboard/UserPayment/UserPayment";
 import Message from "./Pages/Dashboard/Message/Message";
 import PersonalMessage from "./Pages/Dashboard/Message/PersonalMessage/PersonalMessage";
+import Payment from "./Pages/Dashboard/Payment/Payment";
 
 function App() {
   return (
@@ -46,12 +47,13 @@ function App() {
               }
             >
               <Route path="/" element={<DashboardHome />} />
-              <Route path="/notification" element={<Notification />} />
               <Route path="/earning/:income" element={<Earning />} />
+              <Route path="/payment" element={<Payment />} />
+              <Route path="/wallet" element={<Wallet />} />
+              <Route path="/notification" element={<Notification />} />
               <Route path="/host-info" element={<HostInfo />} />
               <Route path="/host-request" element={<HostRequest />} />
               <Route path="/kyc-form" element={<KycForm />} />
-              <Route path="/wallet" element={<Wallet />} />
 
               <Route path="/user-info" element={<UserInfo />} />
               <Route path="/rent-info" element={<RentInformation />} />
