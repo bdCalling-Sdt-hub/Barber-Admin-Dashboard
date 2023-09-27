@@ -238,7 +238,7 @@ const DrawerPage = (props) => {
             <div style={{ marginTop: "-7px" }}>
               <p style={{ fontSize: "20px" }}>{props.earningData.username}</p>
               <p>INE: SNHRM570818MDFPM10</p>
-              <p>Trip Completes:{props.earningData.status.length}</p>
+              <p>Trip Completes:100</p>
               <div
                 style={{ display: "flex", alignItems: "center", gap: "2px" }}
               >

@@ -1,5 +1,6 @@
 .card {
-  background: #F66D0F;
+  /* background: #F66D0F; */
+  background: #364153;
   color: white;
   height: 210px;
   border-radius: 10px;
@@ -11,5 +12,14 @@
 
 .cardTitle {
   margin-bottom: 20px;
-  font-weight: normal;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.statusTitle {
+  display: flex;
+  align-items: center;
 }

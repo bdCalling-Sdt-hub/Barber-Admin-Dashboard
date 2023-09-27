@@ -2,229 +2,12 @@ import { Button, Drawer, Table, Typography } from "antd";
 import React, { useState } from "react";
 import { AiOutlinePrinter } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
+import { BsDownload } from "react-icons/bs";
 import { LiaSaveSolid } from "react-icons/lia";
 import DrawerPage from "../../../Components/DrawerPage/DrawerPage";
 const { Title, Text } = Typography;
 
-const data = [
-  {
-    tripNo: "1373700510",
-
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "2",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "padding",
-    printView: "Button",
-  },
-  {
-    key: "3",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "padding",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "padding",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "padding",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "padding",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "padding",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "complete",
-    printView: "Button",
-  },
-  {
-    key: "1",
-    tripNo: "1373700510",
-    time: "18 Jul, 2023  4:30pm",
-    username: "Fahim",
-    method: "Credit Card",
-    amount: "$850.00",
-    status: "padding",
-    printView: "Button",
-  },
-];
-
 const EarnHistoryTable = () => {
-  const columns = [
-    {
-      title: "TRIP NO.",
-      dataIndex: "tripNo",
-      key: "tripNO",
-    },
-    {
-      title: "TIME",
-      dataIndex: "time",
-      key: "time",
-      responsive: ["md"],
-    },
-    {
-      title: "USER NAME",
-      dataIndex: "username",
-      key: "username",
-      responsive: ["lg"],
-    },
-    {
-      title: "METHOD",
-      dataIndex: "method",
-      key: "method",
-    },
-    {
-      title: "AMOUNT",
-      dataIndex: "amount",
-      key: "amount",
-      responsive: ["md"],
-    },
-    {
-      title: "STATUS",
-      dataIndex: "status",
-      key: "status",
-    },
-    {
-      title: "PRINT/VIEW",
-      dataIndex: "printView",
-      key: "printView",
-      responsive: ["lg"],
-      render: (
-        _,
-        record // Use the second parameter 'record'
-      ) => (
-        <div style={{ textAlign: "center" }}>
-          <Button type="text" style={{ marginRight: "10px" }}>
-            <AiOutlinePrinter style={{ fontSize: "30px", color: "#999999" }} />
-          </Button>
-          <Button onClick={() => showDrawer(record)} type="text">
-            <LiaSaveSolid style={{ fontSize: "30px", color: "#999999" }} />
-          </Button>
-        </div>
-      ),
-    },
-  ];
-
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
   const [earningData, setEarningData] = useState(null);
 
@@ -237,6 +20,80 @@ const EarnHistoryTable = () => {
     setIsDrawerVisible(false);
     setEarningData(null);
   };
+
+  const data = [
+    {
+      key: "1",
+      transactionID: "1373700510",
+      date: "18 Jul, 2023  4:30pm",
+      username: "Sahinur Islam",
+      amount: "$850.00",
+      action: "Button",
+    },
+    {
+      key: "2",
+      transactionID: "1373700510",
+      date: "18 Jul, 2023  4:30pm",
+      username: "Sahinur Islam",
+      amount: "$850.00",
+      action: "Button",
+    },
+    {
+      key: "3",
+      transactionID: "1373700510",
+      date: "18 Jul, 2023  4:30pm",
+      username: "Sahinur Islam",
+      amount: "$850.00",
+      action: "Button",
+    },
+  ];
+  const columns = [
+    {
+      title: "TRANSACTION ID",
+      dataIndex: "transactionID",
+      key: "transactionID",
+    },
+    {
+      title: "DATE",
+      dataIndex: "date",
+      key: "date",
+      responsive: ["md"],
+    },
+    {
+      title: "USER NAME",
+      dataIndex: "username",
+      key: "username",
+      responsive: ["lg"],
+    },
+    {
+      title: "AMOUNT",
+      dataIndex: "amount",
+      key: "amount",
+      responsive: ["md"],
+    },
+    {
+      title: "ACTION",
+      dataIndex: "action",
+      key: "action",
+      responsive: ["lg"],
+      render: (
+        _,
+        record // Use the second parameter 'record'
+      ) => (
+        <div style={{ textAlign: "center" }}>
+          <Button type="text" style={{ marginRight: "10px" }}>
+            <AiOutlinePrinter style={{ fontSize: "30px", color: "white" }} />
+          </Button>
+          <Button onClick={() => showDrawer(record)} type="text">
+            <BsDownload
+              size={25}
+              style={{ fontSize: "30px", color: "white" }}
+            />
+          </Button>
+        </div>
+      ),
+    },
+  ];
 
   return (
     <div>
@@ -252,7 +109,7 @@ const EarnHistoryTable = () => {
           >
             <Typography>
               <Title level={5} strong>
-                Invoice# Trip No.{earningData?.tripNo}
+                Invoice# Trip No.{earningData?.transactionID}
               </Title>
               <Text>See all information about the trip no. 68656</Text>
             </Typography>
