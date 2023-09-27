@@ -404,8 +404,58 @@ const DrawerPage = (props) => {
                 </div>
               </div>
               <hr />
-              <div>
-                {/* here main contaent */}
+              <div className={styles.userContainer}>
+                <div>
+                  <h3>User Info</h3>
+                  <div className={styles.userInfo}>
+                    <div>
+                      {" "}
+                      <img
+                        src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className={styles.info}>
+                      <div className={styles.userInfoLeft}>
+                        <p>User name :</p>
+                        <p>Contact no :</p>
+                        <p>Address :</p>
+                      </div>
+                      <div className={styles.userInfoRight}>
+                        <p>Brooklyn Simmons</p>
+                        <p>(319) 555-0115</p>
+                        <p>6391 Elgin St. Celina</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className={styles.userContainer}>
+                <div>
+                  <h3>Barber Info</h3>
+                  <div className={styles.userInfo}>
+                    <div>
+                      {" "}
+                      <img
+                        src="https://i.ibb.co/9h5XjNp/Rectangle-2519-1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className={styles.info}>
+                      <div className={styles.userInfoLeft}>
+                        <p>Barber name :</p>
+                        <p>Contact no :</p>
+                        <p>Address :</p>
+                      </div>
+                      <div className={styles.userInfoRight}>
+                        <p>Robert Fox</p>
+                        <p>(205) 555-0100</p>
+                        <p>New Jersey 45463</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
