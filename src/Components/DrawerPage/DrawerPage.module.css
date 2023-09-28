@@ -64,6 +64,11 @@
     justify-content: space-between;
     align-items: center;
 }
+.infoUserData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .info p {
     font-family: Montserrat;
@@ -92,6 +97,14 @@
     line-height: normal;
     padding: 8px 0px;
 }
+.userInfoLeftUserData p {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 0px;
+}
 
 .userInfoRight {
     display: flex;
@@ -106,4 +119,32 @@
     font-weight: 700;
     line-height: normal;
     padding: 8px 0px;
+}
+.userInfoRightUserData p {
+    text-align: right;
+    margin-left: 55px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px 0px;
+}
+.salonInfoLeftUserData p {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 0px;
+}
+.salonInfoRightUserData p {
+    margin-left:50px;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px 0px;
 }

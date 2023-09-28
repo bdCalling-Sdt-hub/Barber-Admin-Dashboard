@@ -179,9 +179,9 @@ ul.ant-pagination.ant-table-pagination.ant-table-pagination-right.css-dev-only-d
 :where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header h5{
   color: white;
 }
-button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default{
+/* button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default{
   background: transparent !important;
-}
+} */
 
 button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default.ant-btn-block{
   background: #F66D0F !important;

@@ -293,7 +293,7 @@ const Dashboard = () => {
             key="6"
             icon={<IoCutOutline style={{ fontSize: "14px", color: "white" }} />}
           >
-            <Link to="/user-info" style={{ fontSize: "16px" }}>
+            <Link to="/salonlist" style={{ fontSize: "16px" }}>
               {t("solonaList")}
             </Link>
           </Menu.Item>
@@ -302,7 +302,7 @@ const Dashboard = () => {
             key="7"
             icon={<FaUsers style={{ fontSize: "14px", color: "white" }} />}
           >
-            <Link to="/rent-info" style={{ fontSize: "16px" }}>
+            <Link to="/barbarlist" style={{ fontSize: "16px" }}>
               {t("barberList")}
             </Link>
           </Menu.Item>
@@ -311,7 +311,7 @@ const Dashboard = () => {
             key="8"
             icon={<FaUsers style={{ fontSize: "14px", color: "white" }} />}
           >
-            <Link to="/car-info" style={{ fontSize: "16px" }}>
+            <Link to="/userlist" style={{ fontSize: "16px" }}>
               {t("userList")}
             </Link>
           </Menu.Item>

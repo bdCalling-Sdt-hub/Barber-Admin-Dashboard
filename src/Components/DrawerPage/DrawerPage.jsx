@@ -514,6 +514,64 @@ const DrawerPage = (props) => {
           </div>
         </div>
       )}
+      {props.userData && (
+        <div className={styles.userContainer}>
+          <div>
+            <h3>User Info</h3>
+            <div className={styles.userInfo} style={{display:"flex", justifyContent:"space-between" }}>
+              <div>
+                {" "}
+                <img
+                  src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png"
+                  alt=""
+                />
+              </div>
+              <div className={styles.infoUserData}>
+                <div className={styles.userInfoLeftUserData}>
+                  <p>User name :</p>
+                  <p>Contact no :</p>
+                  <p>Address :</p>
+                </div>
+                <div className={styles.userInfoRightUserData}>
+                  <p>John Doe</p>
+                  <p>(+880) 1711 145865</p>
+                  <p>6391 Elgin St. Celina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {props.salonData && (
+        <div className={styles.userContainer}>
+          <div>
+            <h3>Salon Info</h3>
+            <div className={styles.userInfo} style={{display:"flex" }}>
+              <div>
+                {" "}
+                <img
+                  src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png"
+                  alt=""
+                />
+              </div>
+              <div className={styles.infoUserData}>
+                <div className={styles.salonInfoLeftUserData}>
+                  <p>Salon name :</p>
+                  <p>Contact no :</p>
+                  <p>Address :</p>
+                  <p>Services :</p>
+                </div>
+                <div className={styles.salonInfoRightUserData}>
+                  <p>Apple Green</p>
+                  <p>(+880) 1711 145865</p>
+                  <p>6391 Elgin St. Celina</p>
+                  <p>Haircut, shaving</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

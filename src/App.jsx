@@ -30,6 +30,9 @@ import UserPayment from "./Pages/Dashboard/UserPayment/UserPayment";
 import Message from "./Pages/Dashboard/Message/Message";
 import PersonalMessage from "./Pages/Dashboard/Message/PersonalMessage/PersonalMessage";
 import Payment from "./Pages/Dashboard/Payment/Payment";
+import UserList from "./Pages/Dashboard/UserList/UserList";
+import BarbarList from "./Pages/Dashboard/BarbarList/BarbarList";
+import SalonList from "./Pages/Dashboard/SalonList/SalonList";
 
 function App() {
   return (
@@ -67,8 +70,12 @@ function App() {
               <Route path="/car-kyc" element={<CarKyc />} />
               <Route path="/setting" element={<Setting />}></Route>
               <Route path="/message" element={<Message />}></Route>
+              <Route path="/userlist" element={<UserList />}></Route>
+              <Route path="/barbarlist" element={<BarbarList />}></Route>
+              <Route path="/salonlist" element={<SalonList />}></Route>
               <Route path="/message/:id" element={<PersonalMessage />}></Route>
               <Route path="/setting/:dynamic" element={<SettingPage />} />
+
             </Route>
 
             <Route path="/signin" element={<Signin />} />
