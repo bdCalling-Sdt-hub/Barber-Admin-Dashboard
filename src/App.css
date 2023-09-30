@@ -49,13 +49,17 @@ span.ant-menu-title-content {
 
 /* INPUT */
 :where(.css-dev-only-do-not-override-17a39f8).ant-input-affix-wrapper {
-  background: #364153;
+  background: transparent;
   color: white;
 }
 
-:where(.css-dev-only-do-not-override-17a39f8).ant-input:placeholder-shown {
+/* :where(.css-dev-only-do-not-override-17a39f8).ant-input:placeholder-shown {
   background: #364153;
   color: #CFCFD0;
+} */
+
+input.ant-input.ant-input-lg.css-dev-only-do-not-override-17a39f8 {
+  background: transparent;
 }
 
 :where(.css-dev-only-do-not-override-17a39f8).ant-input-affix-wrapper>input.ant-input:focus {
