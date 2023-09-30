@@ -33,6 +33,8 @@ import Payment from "./Pages/Dashboard/Payment/Payment";
 import UserList from "./Pages/Dashboard/UserList/UserList";
 import BarbarList from "./Pages/Dashboard/BarbarList/BarbarList";
 import SalonList from "./Pages/Dashboard/SalonList/SalonList";
+import AppointmentList from "./Pages/Dashboard/Appointment/AppointmentList";
+import AppointmentReq from "./Pages/Dashboard/Appointment/AppointmentReq";
 
 function App() {
   return (
@@ -53,6 +55,14 @@ function App() {
               <Route path="/earning/:income" element={<Earning />} />
               <Route path="/payment" element={<Payment />} />
               <Route path="/wallet" element={<Wallet />} />
+              <Route path="/appointmentlist" element={<AppointmentList />} />
+              <Route path="/appointmentreq" element={<AppointmentReq />} />
+              
+              <Route path="/message" element={<Message />}></Route>
+              <Route path="/userlist" element={<UserList />}></Route>
+              <Route path="/barbarlist" element={<BarbarList />}></Route>
+              <Route path="/salonlist" element={<SalonList />}></Route>
+              <Route path="/message/:id" element={<PersonalMessage />}></Route>
 
               <Route path="/notification" element={<Notification />} />
               <Route path="/host-info" element={<HostInfo />} />
@@ -71,11 +81,6 @@ function App() {
               <Route path="/car-kyc" element={<CarKyc />} />
               <Route path="/setting" element={<Setting />}></Route>
 
-              <Route path="/message" element={<Message />}></Route>
-              <Route path="/userlist" element={<UserList />}></Route>
-              <Route path="/barbarlist" element={<BarbarList />}></Route>
-              <Route path="/salonlist" element={<SalonList />}></Route>
-              <Route path="/message/:id" element={<PersonalMessage />}></Route>
               
               <Route path="/setting/:dynamic" element={<SettingPage />} />
 

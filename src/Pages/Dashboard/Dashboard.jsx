@@ -282,10 +282,10 @@ const Dashboard = () => {
             title={t("appointment.title")}
           >
             <Menu.Item key="39">
-              <Link to="/host-info">{t("appointment.subTitle1")}</Link>
+              <Link to="/appointmentlist">{t("appointment.subTitle1")}</Link>
             </Menu.Item>
             <Menu.Item key="40">
-              <Link to="/host-request">{t("appointment.subTitle2")}</Link>
+              <Link to="/appointmentreq">{t("appointment.subTitle2")}</Link>
             </Menu.Item>
           </SubMenu>
 

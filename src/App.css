@@ -207,7 +207,7 @@ button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default.ant-btn-bloc
   color: white;
 }
 
-:where(.css-dev-only-do-not-override-17a39f8).ant-input {
+/* :where(.css-dev-only-do-not-override-17a39f8).ant-input {
   background: transparent !important;
   color: white !important;
-}
+} */

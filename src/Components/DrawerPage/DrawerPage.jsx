@@ -38,19 +38,6 @@ const DrawerPage = (props) => {
     },
   };
 
-  const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
-      <Select
-        style={{
-          width: 100,
-          height: "45px",
-        }}
-      >
-        <Option value="86">🏳️‍🌈</Option>
-        <Option value="87">🏳️‍⚧️</Option>
-      </Select>
-    </Form.Item>
-  );
 
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
@@ -417,6 +404,116 @@ const DrawerPage = (props) => {
       )}
 
       {props.invoiceData && (
+        <div>
+          <div style={{ display: "flex", gap: "15px" }}>
+            <div className={styles.appointmentMainContainer}>
+              <div>
+                <h3>Appointment Info</h3>
+                <div className={styles.appointmentInfo}>
+                  <div className={styles.appointmentInfoLeft}>
+                    <p>Appointment Status :</p>
+                    <p>Date & Time :</p>
+                    <p>Total amount :</p>
+                    <p>Barber payment :</p>
+                  </div>
+                  <div className={styles.appointmentInfoRight}>
+                    <p>Completed</p>
+                    <p>06 Sep, 2023- 4:30 PM</p>
+                    <p>$120</p>
+                    <p>$50</p>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className={styles.userContainer}>
+                <div>
+                  <h3>User Info</h3>
+                  <div className={styles.userInfo}>
+                    <div>
+                      {" "}
+                      <img
+                        src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className={styles.info}>
+                      <div className={styles.userInfoLeft}>
+                        <p>User name :</p>
+                        <p>Contact no :</p>
+                        <p>Address :</p>
+                      </div>
+                      <div className={styles.userInfoRight}>
+                        <p>Brooklyn Simmons</p>
+                        <p>(319) 555-0115</p>
+                        <p>6391 Elgin St. Celina</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className={styles.userContainer}>
+                <div>
+                  <h3>Barber Info</h3>
+                  <div className={styles.userInfo}>
+                    <div>
+                      {" "}
+                      <img
+                        src="https://i.ibb.co/9h5XjNp/Rectangle-2519-1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className={styles.info}>
+                      <div className={styles.userInfoLeft}>
+                        <p>Barber name :</p>
+                        <p>Contact no :</p>
+                        <p>Address :</p>
+                      </div>
+                      <div className={styles.userInfoRight}>
+                        <p>Robert Fox</p>
+                        <p>(205) 555-0100</p>
+                        <p>New Jersey 45463</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              gap: 20,
+              position: "absolute",
+              bottom: 10,
+            }}
+          >
+            <Button
+              block
+              style={{
+                background: "#F66D0F",
+                color: "white",
+                height: 50,
+                width: "220px",
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              block
+              style={{
+                background: "#F66D0F",
+                color: "white",
+                height: 50,
+                width: "220px",
+              }}
+            >
+              Print
+            </Button>
+          </div>
+        </div>
+      )}
+      {props.appointmentList && (
         <div>
           <div style={{ display: "flex", gap: "15px" }}>
             <div className={styles.appointmentMainContainer}>

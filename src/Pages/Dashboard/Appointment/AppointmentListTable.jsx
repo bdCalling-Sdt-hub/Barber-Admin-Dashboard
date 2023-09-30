@@ -2,27 +2,27 @@ import { Button, Drawer, Space, Table, Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import { AiOutlinePrinter, AiOutlineEye } from "react-icons/ai";
 import { LiaSaveSolid } from "react-icons/lia";
-import DrawerPage from "../../../Components/DrawerPage/DrawerPage";
 const { Title, Text } = Typography;
 import { CloseOutlined } from "@ant-design/icons";
+import DrawerPage from "../../../Components/DrawerPage/DrawerPage";
 
-function TransactionTable() {
+function AppointmentListTable() {
   const [rentData, setRentData] = useState([]); // Data fetched from the server
   const [totalItems, setTotalItems] = useState(0); // Total number of items
   const [currentPage, setCurrentPage] = useState(1); // Current page number
   const pageSize = 12;
 
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
-  const [invoiceData, setInvoiceData] = useState(null);
+  const [appointmentList, setAppointmentList] = useState(null);
 
   const showDrawer = (record) => {
     setIsDrawerVisible(true);
-    setInvoiceData(record);
+    setAppointmentList(record);
   };
 
   const closeDrawer = () => {
     setIsDrawerVisible(false);
-    setInvoiceData(null);
+    setAppointmentList(null);
   };
 
   useEffect(() => {
@@ -55,7 +55,7 @@ function TransactionTable() {
       key: "1",
       invoiceNo: "1370510",
       time: "18 Jul, 2023  4:30pm",
-      bannername: "Wade Warren",
+      solonaname: "Wade Warren",
       customername: "Sahinur Islam",
       amount: "$850.00",
       status: "complete",
@@ -65,7 +65,7 @@ function TransactionTable() {
       key: "2",
       invoiceNo: "1370510",
       time: "18 Jul, 2023  4:30pm",
-      bannername: "Wade Warren",
+      solonaname: "Wade Warren",
       customername: "Sahinur Islam",
       amount: "$850.00",
       status: "pending",
@@ -75,7 +75,7 @@ function TransactionTable() {
       key: "3",
       invoiceNo: "1370510",
       time: "18 Jul, 2023  4:30pm",
-      bannername: "Wade Warren",
+      solonaname: "Wade Warren",
       customername: "Sahinur Islam",
       amount: "$850.00",
       status: "complete",
@@ -85,7 +85,7 @@ function TransactionTable() {
       key: "4",
       invoiceNo: "1370510",
       time: "18 Jul, 2023  4:30pm",
-      bannername: "Wade Warren",
+      solonaname: "Wade Warren",
       customername: "Sahinur Islam",
       amount: "$850.00",
       status: "complete",
@@ -106,9 +106,9 @@ function TransactionTable() {
       responsive: ["md"],
     },
     {
-      title: "BARBER NAME",
-      dataIndex: "bannername",
-      key: "bannername",
+      title: "SOLONA NAME",
+      dataIndex: "solonaname",
+      key: "solonaname",
       responsive: ["md"],
     },
     {
@@ -211,7 +211,8 @@ function TransactionTable() {
         width={500}
         closable={false}
         extra={
-          <Space>
+          <Space 
+          >
             <button
               style={{
                 borderRadius: "100%",
@@ -219,7 +220,7 @@ function TransactionTable() {
                 height: "50px",
                 width: "50px",
                 textAlign: "center",
-                border: "2px solid white",
+                border:"2px solid white"
               }}
               onClick={closeDrawer}
             >
@@ -228,10 +229,10 @@ function TransactionTable() {
           </Space>
         }
       >
-        {invoiceData && <DrawerPage invoiceData={invoiceData} />}
+        {appointmentList && <DrawerPage appointmentList={appointmentList} />}
       </Drawer>
     </>
   );
 }
 
-export default TransactionTable;
+export default AppointmentListTable;
