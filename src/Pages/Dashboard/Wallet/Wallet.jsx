@@ -80,7 +80,7 @@ const Wallet = () => {
     },
 
     title: {
-      color: "#8d8d8d",
+      color: "white",
       marginBottom: "8px",
       fontWeight: "normal",
     },
@@ -127,8 +127,10 @@ const Wallet = () => {
     style: {
       height: "240px",
     },
+     // Define a custom color palette
+  color: ["#FF7426", "#F9D6BF"],
   };
-  const colors = ["#FF7426", "#1EAAE7", "#2BC155", "#6418C3"];
+  const colors = ["#FF7426", "#1EAAE7", "#F9D6BF", "#6418C3"];
 
   return (
     <div style={{ padding: "0 60px" }}>
@@ -142,7 +144,9 @@ const Wallet = () => {
         <Col lg={{ span: 12 }}>
           <div style={style.progContainer}>
             <h4 style={{ marginBottom: "20px" }}>Main Balance</h4>
-            <h3 style={{ marginBottom: "20px" }}>$567,856.00</h3>
+            <h3 style={{ marginBottom: "20px", color: "#FF7426" }}>
+              $567,856.00
+            </h3>
             <Progress
               percent={50}
               size={["100%", 20]}
@@ -195,7 +199,7 @@ const Wallet = () => {
             marginBottom: "30px",
           }}
         >
-          <Title level={3} style={{ color: "#F66D0F" }}>
+          <Title level={3} style={{ color: "white" }}>
             Card List
           </Title>
           <Button style={style.addCardBtn} onClick={() => showModal()}>

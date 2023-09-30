@@ -157,7 +157,8 @@ ul.ant-pagination.ant-table-pagination.ant-table-pagination-right.css-dev-only-d
 :where(.css-dev-only-do-not-override-17a39f8).ant-pagination .ant-pagination-disabled .ant-pagination-item-link {
   color: white !important;
 }
-:where(.css-dev-only-do-not-override-17a39f8).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-select:not(.ant-select-customize-input) .ant-select-selector {
   background: transparent !important;
   color: white !important;
   border: none !important;
@@ -166,23 +167,47 @@ ul.ant-pagination.ant-table-pagination.ant-table-pagination-right.css-dev-only-d
 
 /* side modal */
 
-:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-wrapper-body{
+:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-wrapper-body {
   background: #364153;
 }
-:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header{
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header {
   background: #F66D0F !important;
   color: white;
 }
-:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header span, h5{
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header span,
+h5 {
   color: white;
 }
-:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header h5{
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-drawer .ant-drawer-header h5 {
   color: white;
 }
+
 /* button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default{
   background: transparent !important;
 } */
 
-button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default.ant-btn-block{
+button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default.ant-btn-block {
   background: #F66D0F !important;
+}
+
+
+/* wallet */
+:where(.css-dev-only-do-not-override-17a39f8).ant-progress .ant-progress-inner {
+  background: #F9D6BF !important;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-btn-default {
+  border: none !important;
+}
+
+.ant-menu-submenu-title {
+  color: white;
+}
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-input {
+  background: transparent !important;
+  color: white !important;
 }

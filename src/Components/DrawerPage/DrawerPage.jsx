@@ -65,8 +65,8 @@ const DrawerPage = (props) => {
               display: "flex",
               alignItems: "center",
               gap: "20px",
-              borderBottom: "1px solid #ebe6e6",
-              paddingBottom: "20px",
+            
+              paddingBottom: "30px",
             }}
           >
             <div style={style.cardType}>
@@ -111,7 +111,9 @@ const DrawerPage = (props) => {
           <div>
             <Form onFinish={onFinish}>
               <div>
-                <label htmlFor="">Your Name</label>
+                <label style={{ color: "white" }} htmlFor="">
+                  Your Name
+                </label>
                 <Form.Item
                   name="name"
                   rules={[
@@ -128,7 +130,9 @@ const DrawerPage = (props) => {
                 </Form.Item>
               </div>
               <div>
-                <label htmlFor="">Email</label>
+                <label style={{ color: "white" }} htmlFor="">
+                  Email
+                </label>
                 <Form.Item
                   name="email"
                   rules={[
@@ -140,30 +144,34 @@ const DrawerPage = (props) => {
                 >
                   <Input
                     style={style.editInput}
-                    defaultValue={"siffahim25@gmail.com"}
+                    defaultValue={"infosahinur@gmail.com"}
                   />
                 </Form.Item>
               </div>
               <div>
-                <label htmlFor="">Phone Number</label>
+                <label style={{ color: "white" }} htmlFor="">
+                  Phone Number
+                </label>
                 <Form.Item
-                  name="phone"
+                  name="phoneNumber"
                   rules={[
                     {
                       required: true,
-                      message: "Please input your phone number!",
+                      message: "Please input your Phone Number!",
                     },
                   ]}
                 >
                   <Input
-                    addonBefore={prefixSelector}
-                    style={{ height: "45px" }}
-                    defaultValue={"01646524028"}
+                    style={style.editInput}
+                    defaultValue={"+8801788215840"}
                   />
                 </Form.Item>
               </div>
+
               <div>
-                <label htmlFor="">Card Number</label>
+                <label style={{ color: "white" }} htmlFor="">
+                  Card Number
+                </label>
                 <Form.Item
                   name="cardNumber"
                   rules={[
@@ -180,7 +188,9 @@ const DrawerPage = (props) => {
                 </Form.Item>
               </div>
               <div>
-                <label htmlFor="">CVC</label>
+                <label style={{ color: "white" }} htmlFor="">
+                  CVC
+                </label>
                 <Form.Item
                   name="cvc"
                   rules={[
@@ -194,7 +204,9 @@ const DrawerPage = (props) => {
                 </Form.Item>
               </div>
               <div>
-                <label htmlFor="">Expire Date</label>
+                <label style={{ color: "white" }} htmlFor="">
+                  Expire Date
+                </label>
                 <Form.Item
                   name="name"
                   rules={[
@@ -214,11 +226,11 @@ const DrawerPage = (props) => {
               <Form.Item>
                 <Button
                   style={{
-                    background: "#000890",
+                    background: "#F66D0F ",
                     color: "white",
                     width: "100%",
                     height: "45px",
-                    marginTop: "100px",
+                    marginTop: "40px",
                   }}
                   htmlType="submit"
                 >
@@ -518,13 +530,13 @@ const DrawerPage = (props) => {
         <div className={styles.userContainer}>
           <div>
             <h3>User Info</h3>
-            <div className={styles.userInfo} style={{display:"flex", justifyContent:"space-between" }}>
+            <div
+              className={styles.userInfo}
+              style={{ display: "flex", justifyContent: "space-between" }}
+            >
               <div>
                 {" "}
-                <img
-                  src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png"
-                  alt=""
-                />
+                <img src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png" alt="" />
               </div>
               <div className={styles.infoUserData}>
                 <div className={styles.userInfoLeftUserData}>
@@ -546,13 +558,10 @@ const DrawerPage = (props) => {
         <div className={styles.userContainer}>
           <div>
             <h3>Salon Info</h3>
-            <div className={styles.userInfo} style={{display:"flex" }}>
+            <div className={styles.userInfo} style={{ display: "flex" }}>
               <div>
                 {" "}
-                <img
-                  src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png"
-                  alt=""
-                />
+                <img src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png" alt="" />
               </div>
               <div className={styles.infoUserData}>
                 <div className={styles.salonInfoLeftUserData}>

@@ -53,6 +53,7 @@ function App() {
               <Route path="/earning/:income" element={<Earning />} />
               <Route path="/payment" element={<Payment />} />
               <Route path="/wallet" element={<Wallet />} />
+
               <Route path="/notification" element={<Notification />} />
               <Route path="/host-info" element={<HostInfo />} />
               <Route path="/host-request" element={<HostRequest />} />
@@ -69,11 +70,13 @@ function App() {
               <Route path="/user-kyc" element={<UserKyc />} />
               <Route path="/car-kyc" element={<CarKyc />} />
               <Route path="/setting" element={<Setting />}></Route>
+
               <Route path="/message" element={<Message />}></Route>
               <Route path="/userlist" element={<UserList />}></Route>
               <Route path="/barbarlist" element={<BarbarList />}></Route>
               <Route path="/salonlist" element={<SalonList />}></Route>
               <Route path="/message/:id" element={<PersonalMessage />}></Route>
+              
               <Route path="/setting/:dynamic" element={<SettingPage />} />
 
             </Route>

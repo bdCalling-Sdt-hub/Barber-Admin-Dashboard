@@ -28,7 +28,7 @@ const WalletCard = ({ data, cardBg }) => {
   const style = {
     card: {
       marginBottom: "20px",
-      borderBottom: "1px solid #ebe6e6",
+      borderBottom: "1px solid #d9d1d1aa",
       paddingBottom: "30px",
     },
     cardType: {
@@ -36,6 +36,7 @@ const WalletCard = ({ data, cardBg }) => {
       background: cardBg,
       borderRadius: "10px",
       position: "relative",
+      // marginRight: "10px",
     },
     icon: {
       position: "absolute",
@@ -51,10 +52,11 @@ const WalletCard = ({ data, cardBg }) => {
       padding: "10px",
       display: "flex",
       alignItems: "center",
+      color: "#fff",
       gap: "5px",
     },
     title: {
-      color: "#8d8d8d",
+      // color: "#8d8d8d",
       marginBottom: "8px",
       fontWeight: "normal",
     },
@@ -103,9 +105,9 @@ const WalletCard = ({ data, cardBg }) => {
             overlay={
               <div
                 style={{
-                  background: "#fff",
+                  background: "#0E1116",
                   borderRadius: "4px",
-                  boxShadow: "0 0 5px #e3e2e2",
+                  color: "#fff",
                   padding: "6px",
                 }}
               >
@@ -114,7 +116,7 @@ const WalletCard = ({ data, cardBg }) => {
                   onClick={() => showDrawer(data)}
                   style={style.cardMenuBtn}
                 >
-                  <LiaEditSolid fontSize={16} />
+                  <LiaEditSolid color="white" fontSize={16} />
                   Edit Card
                 </Button>
                 <Button
@@ -129,7 +131,7 @@ const WalletCard = ({ data, cardBg }) => {
             placement="bottomRight"
           >
             <Button type="text">
-              <BsThreeDotsVertical style={{ fontSize: "20px" }} />
+              <BsThreeDotsVertical color="white" style={{ fontSize: "20px" }} />
             </Button>
           </Dropdown>
         </Col>
@@ -148,7 +150,7 @@ const WalletCard = ({ data, cardBg }) => {
               <Text>Edit Card</Text>
             </Typography>
             <Button type="text" onClick={closeDrawer}>
-              <IoMdClose fontSize={25} />
+              <IoMdClose color="black" fontSize={25} />
             </Button>
           </div>
         }
