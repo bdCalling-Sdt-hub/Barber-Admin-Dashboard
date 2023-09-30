@@ -223,19 +223,19 @@ const InvoiceTable = () => {
         closable={false}
         extra={
           <Space>
-            <Button
+            <button
               style={{
                 borderRadius: "100%",
-                backgroundColor: "white",
-                color: "red",
+                backgroundColor: "#F66D0F",
                 height: "50px",
                 width: "50px",
                 textAlign: "center",
+                border:"2px solid white"
               }}
               onClick={closeDrawer}
             >
               <CloseOutlined color="black" />
-            </Button>
+            </button>
           </Space>
         }
       >
