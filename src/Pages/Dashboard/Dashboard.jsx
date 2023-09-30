@@ -156,10 +156,11 @@ const Dashboard = () => {
         >
           Notifications
         </h2>
-        {/* <span style={{ fontWeight: 'bold', color: '#000' }}>Notifications</span> */}
       </Menu.Item>
       {items.map((item) => (
-        <Menu.Item key={item.key}>{item.label}</Menu.Item>
+        <Menu.Item key={item.key} color="white">
+          {item.label}
+        </Menu.Item>
       ))}
       <div
         className=""
@@ -175,8 +176,8 @@ const Dashboard = () => {
           block
           style={{
             height: "50px",
-            // backgroundColor: "#e6e7f4",
-            color: "#F66D0F",
+            backgroundColor: "#F66D0F",
+            color: "white",
             fontSize: "18px",
             fontWeight: "bold",
           }}

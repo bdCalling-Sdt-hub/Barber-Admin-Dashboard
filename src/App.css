@@ -211,3 +211,13 @@ button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default.ant-btn-bloc
   background: transparent !important;
   color: white !important;
 } */
+
+
+/* notification */
+:where(.css-dev-only-do-not-override-17a39f8).ant-dropdown .ant-dropdown-menu {
+  background: #364153 !important;
+}
+
+span.ant-dropdown-menu-title-content {
+  color: white;
+}
