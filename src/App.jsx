@@ -57,12 +57,16 @@ function App() {
               <Route path="/wallet" element={<Wallet />} />
               <Route path="/appointmentlist" element={<AppointmentList />} />
               <Route path="/appointmentreq" element={<AppointmentReq />} />
+              <Route path="/salonlist" element={<SalonList />} />
+              <Route path="/userlist" element={<UserList />} />
+              <Route path="/barbarlist" element={<BarbarList />} />
+              <Route path="/message" element={<Message />} />
+              <Route path="/message/:id" element={<PersonalMessage />} />
+              <Route path="/setting" element={<Setting />} />
+              <Route path="/setting/:dynamic" element={<SettingPage />} />
+
+
               
-              <Route path="/message" element={<Message />}></Route>
-              <Route path="/userlist" element={<UserList />}></Route>
-              <Route path="/barbarlist" element={<BarbarList />}></Route>
-              <Route path="/salonlist" element={<SalonList />}></Route>
-              <Route path="/message/:id" element={<PersonalMessage />}></Route>
 
               <Route path="/notification" element={<Notification />} />
               <Route path="/host-info" element={<HostInfo />} />
@@ -79,16 +83,12 @@ function App() {
               <Route path="/host-kyc" element={<HostKyc />} />
               <Route path="/user-kyc" element={<UserKyc />} />
               <Route path="/car-kyc" element={<CarKyc />} />
-              <Route path="/setting" element={<Setting />}></Route>
-
-              
-              <Route path="/setting/:dynamic" element={<SettingPage />} />
 
             </Route>
 
             <Route path="/signin" element={<Signin />} />
             <Route path="/otp" element={<Otp />} />
-            <Route path="/forget-password" element={ <Email />} />
+            <Route path="/forget-password" element={<Email />} />
             <Route path="/update-password" element={<UpdatePass />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
