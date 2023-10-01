@@ -225,3 +225,6 @@ button.ant-btn.css-dev-only-do-not-override-17a39f8.ant-btn-default.ant-btn-bloc
 span.ant-dropdown-menu-title-content {
   color: white;
 }
+:where(.css-dev-only-do-not-override-17a39f8).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  color: white !important;
+}

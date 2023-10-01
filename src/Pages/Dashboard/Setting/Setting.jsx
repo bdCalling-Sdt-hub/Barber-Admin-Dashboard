@@ -14,8 +14,8 @@ const Setting = () => {
 
   const style = {
     formContainer: {
-      background: "white",
-      padding: "30px",
+      // background: "white",
+      // padding: "30px",
       borderRadius: "10px",
     },
     btn: {
@@ -24,6 +24,7 @@ const Setting = () => {
       justifyContent: "space-between",
       height: "45px",
       marginBottom: "10px",
+      backgroundColor: "#364153 !important",
     },
     notification: {
       display: "flex",
@@ -31,11 +32,11 @@ const Setting = () => {
       justifyContent: "space-between",
       height: "45px",
       marginTop: "10px",
-      backgroundColor: "#ffffff",
-      border: "1px solid #d9d9d9",
+      backgroundColor: "#364153",
       boxShadow: "0 2px 0 rgba(0, 0, 0, 0.02)",
       borderRadius: "6px",
       padding: "4px 15px",
+      marginBottom: "15px",
     },
     input: {
       height: "45px",
@@ -44,55 +45,34 @@ const Setting = () => {
       width: "50px",
       height: "70px",
     },
+    // btn:{
+    //   backgroundColor:"#364153 !important",
+    // }
   };
   const menuItems = [
     {
       key: "1",
-      title: "Personal Information",
-      link: "personal-information",
-    },
-    {
-      key: "2",
       title: "Change Password",
       link: "change-password",
     },
     {
-      key: "3",
+      key: "2",
       title: "Login Activity",
       link: "login-activity",
     },
+
     {
-      key: "4",
-      title: "Block List",
-      link: "block-list",
-    },
-    {
-      key: "5",
-      title: "Renti Percentage",
-      link: "renti-percentage",
-    },
-    {
-      key: "6",
-      title: "Host Payment Time",
-      link: "host-payment-time",
-    },
-    {
-      key: "7",
-      title: "Trash",
-      link: "trash",
-    },
-    {
-      key: "8",
+      key: "3",
       title: "Privacy Policy",
       link: "privacy-policy",
     },
     {
-      key: "9",
+      key: "4",
       title: "Terms and Condition",
       link: "terms-condition",
     },
     {
-      key: "10",
+      key: "5",
       title: "About Us",
       link: "about-us",
     },
@@ -147,7 +127,7 @@ const Setting = () => {
   };
 
   const setPercentage = () => {
-    alert("tushar");
+    alert("sahinur");
     setOpenModal(false);
   };
 
@@ -156,20 +136,9 @@ const Setting = () => {
   };
 
   return (
-    <div style={{ padding: "0 60px" }}>
+    <div>
       <h2 style={{ marginBottom: "20px", fontWeight: "normal" }}>Settings</h2>
       <div style={style.formContainer}>
-        {menuItems.map((item) => (
-          <Button
-            onClick={() => handleNavigate(item.link)}
-            key={item.key}
-            block
-            style={style.btn}
-          >
-            <span>{item.title}</span>
-            <LiaAngleRightSolid fontSize={20} />
-          </Button>
-        ))}
         <div style={style.notification}>
           <span>Notification</span>
           <Switch
@@ -179,6 +148,17 @@ const Setting = () => {
             defaultChecked
           />
         </div>
+        {menuItems.map((item) => (
+          <div
+            key={item.key}
+            onClick={() => handleNavigate(item.link)}
+            style={style.notification}
+          >
+            <span>{item.title}</span>
+            <LiaAngleRightSolid fontSize={20} />
+          </div>
+        ))}
+
         {/* change password*/}
         <Modal
           title={<p style={{ marginBottom: "30px" }}>Change password</p>}
@@ -446,30 +426,6 @@ const Setting = () => {
           </Form>
         </Modal>
 
-        {/*Set Percentage*/}
-        <Modal
-          title="Set Ranti's Percentage"
-          centered
-          open={openModal}
-          onOk={() => setPercentage()}
-          okText="Confirm"
-          onCancel={() => setOpenModal(false)}
-          okButtonProps={{
-            style: {
-              width: "100%",
-              backgroundColor: "#F66D0F",
-              height: "40px",
-              marginLeft: "-20px",
-            },
-          }} // Adjust the width here
-          cancelButtonProps={{ style: { display: "none" } }}
-          width={500}
-        >
-          <Input
-            placeholder="set your percentage"
-            style={{ height: "50px", margin: "20px 0px" }}
-          />
-        </Modal>
       </div>
     </div>
   );
