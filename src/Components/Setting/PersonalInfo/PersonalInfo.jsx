@@ -58,8 +58,8 @@ const PersonalInfo = () => {
                 src="https://yt3.googleusercontent.com/Qy5Gk9hccQxiZdX8IxdK-mF2ktN17gap3ZkGQZkGz8NB4Yep3urmucp5990H2tjXIISgUoYssJE=s900-c-k-c0x00ffffff-no-rj"
               />
               <div>
-                <h2>Fahim</h2>
-                <p>@fahim</p>
+                <h2>Sahinur</h2>
+                <p>@sahinur</p>
                 <p>INE: GMVLMR80070501M100</p>
               </div>
             </div>
@@ -67,7 +67,7 @@ const PersonalInfo = () => {
               <Button
                 onClick={handleChange}
                 style={{
-                  background: "#000B92",
+                  background: "#F66D0F",
                   color: "#fff",
                   display: "flex",
                   alignItems: "center",
@@ -84,7 +84,7 @@ const PersonalInfo = () => {
               <label htmlFor="">Name</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"Fahim"}
+                defaultValue={"Sahinur Islam"}
                 readOnly
               />
             </Col>
@@ -94,7 +94,7 @@ const PersonalInfo = () => {
               <label htmlFor="">Email</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"siffahim25@gmail.com"}
+                defaultValue={"infosahinur@gmail.com"}
                 readOnly
               />
             </Col>
@@ -130,7 +130,7 @@ const PersonalInfo = () => {
               <label htmlFor="">Address</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"Mogbazer,Dhaka"}
+                defaultValue={"Badda,Dhaka"}
                 readOnly
               />
             </Col>
@@ -161,8 +161,8 @@ const PersonalInfo = () => {
               </ImgCrop>
 
               <div>
-                <h2>Fahim</h2>
-                <p>@fahim</p>
+                <h2>Sahinur</h2>
+                <p>@sahinur</p>
                 <p>INE: GMVLMR80070501M100</p>
               </div>
             </div>
@@ -179,12 +179,12 @@ const PersonalInfo = () => {
               <label htmlFor="">Email</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"siffahim25@gmail.com"}
+                defaultValue={"infosahinur@gmail.com"}
               />
             </Col>
             <Col span={12}>
               <label htmlFor="">Phone Number</label>
-              <Input style={{ height: "45px" }} defaultValue={"01646524028"} />
+              <Input style={{ height: "45px" }} defaultValue={"01788215840"} />
             </Col>
           </Row>
           <Row gutter={15} style={{ marginBottom: "15px" }}>
@@ -215,7 +215,7 @@ const PersonalInfo = () => {
           <Button
             style={{
               height: "45px",
-              background: "#000B92",
+              background: "#F66D0F",
               color: "#fff",
               marginTop: "20px",
             }}

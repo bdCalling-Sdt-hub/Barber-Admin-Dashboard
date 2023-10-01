@@ -38,6 +38,19 @@ const Setting = () => {
       padding: "4px 15px",
       marginBottom: "15px",
     },
+    option: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      height: "45px",
+      marginTop: "10px",
+      backgroundColor: "#364153",
+      boxShadow: "0 2px 0 rgba(0, 0, 0, 0.02)",
+      borderRadius: "6px",
+      padding: "4px 15px",
+      marginBottom: "15px",
+      cursor: "pointer",
+    },
     input: {
       height: "45px",
     },
@@ -152,7 +165,7 @@ const Setting = () => {
           <div
             key={item.key}
             onClick={() => handleNavigate(item.link)}
-            style={style.notification}
+            style={style.option}
           >
             <span>{item.title}</span>
             <LiaAngleRightSolid fontSize={20} />
@@ -425,7 +438,6 @@ const Setting = () => {
             </Form.Item>
           </Form>
         </Modal>
-
       </div>
     </div>
   );
