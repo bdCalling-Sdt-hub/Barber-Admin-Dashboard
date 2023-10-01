@@ -149,18 +149,19 @@ const Dashboard = () => {
 
   const menu = (
     <Menu>
-      <Menu.Item disabled>
+      <div disabled>
         <h2
           style={{
             color: "#F66D0F",
             fontWeight: "500",
             borderBottom: "1px solid #e6e7f4",
-            paddingBottom: "20px",
+            padding: "20px 0px",
+            paddingLeft: "20px",
           }}
         >
           Notifications
         </h2>
-      </Menu.Item>
+      </div>
       {items.map((item) => (
         <Menu.Item key={item.key} color="white">
           {item.label}
