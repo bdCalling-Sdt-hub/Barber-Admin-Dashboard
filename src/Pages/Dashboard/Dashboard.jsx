@@ -377,7 +377,7 @@ const Dashboard = () => {
                 color: "white",
               }}
             />
-            <h2>{t("header.title")}</h2>
+            {/* <h2>{t("header.title")}</h2> */}
           </div>
 
           <div
