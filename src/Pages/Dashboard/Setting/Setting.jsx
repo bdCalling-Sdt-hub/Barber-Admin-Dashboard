@@ -65,27 +65,46 @@ const Setting = () => {
   const menuItems = [
     {
       key: "1",
+      title: "Booking Percentage",
+      link: "booking-percentage",
+    },
+    {
+      key: "2",
       title: "Change Password",
       link: "change-password",
     },
     {
-      key: "2",
+      key: "3",
       title: "Login Activity",
       link: "login-activity",
     },
-
     {
-      key: "3",
+      key: "4",
+      title: "Block List",
+      link: "block-list",
+    },
+    {
+      key: "5",
+      title: "Reviews",
+      link: "reviews",
+    },
+    {
+      key: "6",
+      title: "Trash",
+      link: "trash",
+    },
+    {
+      key: "7",
       title: "Privacy Policy",
       link: "privacy-policy",
     },
     {
-      key: "4",
+      key: "8",
       title: "Terms and Condition",
       link: "terms-condition",
     },
     {
-      key: "5",
+      key: "9",
       title: "About Us",
       link: "about-us",
     },
@@ -126,7 +145,7 @@ const Setting = () => {
   };
 
   const handleNavigate = (value) => {
-    if (value == "renti-percentage") {
+    if (value == "booking-percentage") {
       setOpenModal(true);
     } else if (value === "change-password") {
       setOpenChangePassModel(true);
@@ -136,6 +155,9 @@ const Setting = () => {
   };
 
   const handleNotification = (e) => {
+    console.log(e);
+  };
+  const handleSubscription = (e) => {
     console.log(e);
   };
 
@@ -161,6 +183,15 @@ const Setting = () => {
             defaultChecked
           />
         </div>
+        <div style={style.notification}>
+          <span>Subscription</span>
+          <Switch
+            onChange={(e) => handleSubscription(e)}
+            checkedChildren="ON"
+            unCheckedChildren="OFF"
+            defaultChecked
+          />
+        </div>
         {menuItems.map((item) => (
           <div
             key={item.key}
@@ -172,6 +203,60 @@ const Setting = () => {
           </div>
         ))}
 
+        {/* Booking Percentage*/}
+        <Modal
+          title={<p style={{ marginBottom: "30px" }}>Booking Percentage</p>}
+          centered
+          open={openModal}
+          onCancel={() => setOpenModal(false)}
+          width={500}
+          footer={[]}
+        >
+          <Form
+            name="normal_login"
+            className="login-form"
+            initialValues={{
+              remember: true,
+            }}
+            onFinish={handleChangePassword}
+          >
+            <p>Set your percentage from clients booking.</p>
+            <div style={{background:"#F66D0F",display:"flex",margin:"0 auto", padding:"10px",justifyContent:"center",height:"100px", width:"100px",borderRadius:"100%"}} >
+              <img   src="https://i.ibb.co/ZzSj8rj/percent-1-traced.png" alt="" />
+            </div>
+
+            <div>
+              <label htmlFor="" className={style.label}>
+                Set your percentage
+              </label>
+              <Form.Item name="currentPassword">
+                <Input
+                  placeholder="Enter Percentage"
+                  type="Text"
+                  style={style.input}
+                />
+              </Form.Item>
+            </div>
+
+            <Form.Item>
+              <Button
+                type="primary"
+                htmlType="submit"
+                className="login-form-button"
+                block
+                style={{
+                  height: "45px",
+                  fontWeight: "400px",
+                  fontSize: "18px",
+                  background: "#F66D0F",
+                  marginTop: "60px",
+                }}
+              >
+                Set
+              </Button>
+            </Form.Item>
+          </Form>
+        </Modal>
         {/* change password*/}
         <Modal
           title={<p style={{ marginBottom: "30px" }}>Change password</p>}
