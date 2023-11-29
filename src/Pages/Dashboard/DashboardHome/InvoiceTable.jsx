@@ -11,40 +11,50 @@ const data = [
     key: "1",
     invoiceNo: "1370510",
     time: "18 Jul, 2023  4:30pm",
-    salonname: "Hair Force Salon",
-    customername: "Sahinur Islam",
+    clientname: "Mr ululu",
+    providername: "Sahinur Islam",
     amount: "$850.00",
     status: "complete",
     printView: "Button",
   },
   {
-    key: "2",
+    key: "1",
     invoiceNo: "1370510",
     time: "18 Jul, 2023  4:30pm",
-    salonname: "Hair Force Salon",
-    customername: "Sahinur Islam",
-    amount: "$850.00",
-    status: "pending",
-    printView: "Button",
-  },
-  {
-    key: "3",
-    invoiceNo: "1370510",
-    time: "18 Jul, 2023  4:30pm",
-    salonname: "Hair Force Salon",
-    customername: "Sahinur Islam",
+    clientname: "Mr ululu",
+    providername: "Sahinur Islam",
     amount: "$850.00",
     status: "complete",
     printView: "Button",
   },
   {
-    key: "4",
+    key: "1",
     invoiceNo: "1370510",
     time: "18 Jul, 2023  4:30pm",
-    salonname: "Hair Force Salon",
-    customername: "Sahinur Islam",
+    clientname: "Mr ululu",
+    providername: "Sahinur Islam",
     amount: "$850.00",
-    status: "canelled",
+    status: "complete",
+    printView: "Button",
+  },
+  {
+    key: "1",
+    invoiceNo: "1370510",
+    time: "18 Jul, 2023  4:30pm",
+    clientname: "Mr ululu",
+    providername: "Sahinur Islam",
+    amount: "$850.00",
+    status: "complete",
+    printView: "Button",
+  },
+  {
+    key: "1",
+    invoiceNo: "1370510",
+    time: "18 Jul, 2023  4:30pm",
+    clientname: "Mr ululu",
+    providername: "Sahinur Islam",
+    amount: "$850.00",
+    status: "complete",
     printView: "Button",
   },
 ];
@@ -81,15 +91,15 @@ const InvoiceTable = () => {
       responsive: ["md"],
     },
     {
-      title: "SALON NAME",
-      dataIndex: "salonname",
-      key: "salonname",
+      title: "CLIENT NAME",
+      dataIndex: "clientname",
+      key: "clientname",
       responsive: ["md"],
     },
     {
-      title: "CUSTOMER NAME",
-      dataIndex: "customername",
-      key: "customername",
+      title: "PROVIDER NAME",
+      dataIndex: "providername",
+      key: "providername",
       responsive: ["lg"],
     },
     {
@@ -210,16 +220,16 @@ const InvoiceTable = () => {
           <div>
             <Typography>
               <Title level={5} strong>
-                Invoice# Trip No.{invoiceData?.invoiceNo}
+                Invoice# No.{invoiceData?.invoiceNo}
               </Title>
-              <Text>See all information about the trip no. 68656</Text>
+              <Text>See all details about this appointment</Text>
             </Typography>
           </div>
         }
         placement="right"
         onClose={closeDrawer}
         open={isDrawerVisible}
-        width={500}
+        width={550}
         closable={false}
         extra={
           <Space>

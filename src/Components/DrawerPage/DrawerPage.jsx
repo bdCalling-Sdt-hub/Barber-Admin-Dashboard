@@ -578,21 +578,21 @@ const DrawerPage = (props) => {
                   <div className={styles.appointmentInfoLeft}>
                     <p>Appointment Status :</p>
                     <p>Date & Time :</p>
-                    <p>Total amount :</p>
-                    <p>Barber payment :</p>
+                    <p>Payment Method :</p>
+                    <p>Payment Amount :</p>
                   </div>
                   <div className={styles.appointmentInfoRight}>
                     <p>Completed</p>
                     <p>06 Sep, 2023- 4:30 PM</p>
-                    <p>$120</p>
-                    <p>$50</p>
+                    <p>Debit Card</p>
+                    <p>$ 200</p>
                   </div>
                 </div>
               </div>
               <hr />
               <div className={styles.userContainer}>
                 <div>
-                  <h3>User Info</h3>
+                  <h3>Client Info</h3>
                   <div className={styles.userInfo}>
                     <div>
                       {" "}
@@ -603,7 +603,7 @@ const DrawerPage = (props) => {
                     </div>
                     <div className={styles.info}>
                       <div className={styles.userInfoLeft}>
-                        <p>User name :</p>
+                        <p>Client name :</p>
                         <p>Contact no :</p>
                         <p>Address :</p>
                       </div>
@@ -619,7 +619,7 @@ const DrawerPage = (props) => {
               <hr />
               <div className={styles.userContainer}>
                 <div>
-                  <h3>Barber Info</h3>
+                  <h3>Provider Info</h3>
                   <div className={styles.userInfo}>
                     <div>
                       {" "}
@@ -630,7 +630,7 @@ const DrawerPage = (props) => {
                     </div>
                     <div className={styles.info}>
                       <div className={styles.userInfoLeft}>
-                        <p>Barber name :</p>
+                        <p>Provider name :</p>
                         <p>Contact no :</p>
                         <p>Address :</p>
                       </div>
