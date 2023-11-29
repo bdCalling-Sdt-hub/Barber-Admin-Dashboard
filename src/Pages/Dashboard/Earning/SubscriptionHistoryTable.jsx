@@ -7,7 +7,7 @@ import { LiaSaveSolid } from "react-icons/lia";
 import DrawerPage from "../../../Components/DrawerPage/DrawerPage";
 const { Title, Text } = Typography;
 
-const EarnHistoryTable = () => {
+const SubscriptionHistoryTable = () => {
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
   const [earningData, setEarningData] = useState(null);
 
@@ -109,9 +109,9 @@ const EarnHistoryTable = () => {
           >
             <Typography>
               <Title level={5} strong>
-                Invoice# Trip No.{earningData?.transactionID}
+                Invoice# No.{earningData?.transactionID}
               </Title>
-              <Text>See all information about the trip no. 68656</Text>
+              <Text>See all details about this transaction</Text>
             </Typography>
             <Button type="text" onClick={closeDrawer}>
               <IoMdClose fontSize={25} />
@@ -130,4 +130,4 @@ const EarnHistoryTable = () => {
   );
 };
 
-export default EarnHistoryTable;
+export default SubscriptionHistoryTable;

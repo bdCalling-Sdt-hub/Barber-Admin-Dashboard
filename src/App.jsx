@@ -2,7 +2,6 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import DashboardHome from "./Pages/Dashboard/DashboardHome/DashboardHome";
-import Earning from "./Pages/Dashboard/Earning/Earning";
 import Notification from "./Pages/Dashboard/Notification/Notification";
 import Wallet from "./Pages/Dashboard/Wallet/Wallet";
 import Email from "./Pages/Email/Email";
@@ -21,6 +20,8 @@ import SalonList from "./Pages/Dashboard/SalonList/SalonList";
 import AppointmentList from "./Pages/Dashboard/Appointment/AppointmentList";
 import AppointmentReq from "./Pages/Dashboard/Appointment/AppointmentReq";
 import NotFound from "./404";
+import Bookings from "./Pages/Dashboard/Earning/Bookings";
+import Subscription from "./Pages/Dashboard/Earning/Subscription";
 
 function App() {
   return (
@@ -38,7 +39,8 @@ function App() {
               }
             >
               <Route path="/" element={<DashboardHome />} />
-              <Route path="/earning/:income" element={<Earning />} />
+              <Route path="/earning/booking" element={<Bookings />} />
+              <Route path="/earning/subscription" element={<Subscription />} />
               <Route path="/payment" element={<Payment />} />
               <Route path="/wallet" element={<Wallet />} />
               <Route path="/appointmentlist" element={<AppointmentList />} />

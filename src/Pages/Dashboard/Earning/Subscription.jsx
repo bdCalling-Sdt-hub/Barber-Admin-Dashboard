@@ -1,12 +1,12 @@
 import { Col, Row } from "antd";
 import React from "react";
 import { LiaHandHoldingUsdSolid } from "react-icons/lia";
-import EarnHistoryTable from "./EarnHistoryTable";
+import EarnHistoryTable from "./SubscriptionHistoryTable";
 import style from "./Earning.module.css";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 
-function Earning() {
+function Subscription() {
   const location = useLocation();
 
   return (
@@ -93,4 +93,4 @@ function Earning() {
   );
 }
 
-export default Earning;
+export default Subscription;

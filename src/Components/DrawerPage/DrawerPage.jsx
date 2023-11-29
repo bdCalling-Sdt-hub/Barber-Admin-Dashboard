@@ -311,6 +311,89 @@ const DrawerPage = (props) => {
           </div>
         </div>
       )}
+      {props.bookingData && (
+        <div>
+          <div style={{ display: "flex", gap: "15px" }}>
+            <div className={styles.appointmentMainContainer}>
+              <div>
+                <h3>Transaction Information</h3>
+                <div className={styles.appointmentInfo}>
+                  <div className={styles.appointmentInfoLeft}>
+                    <p>Time :</p>
+                    <p>Date :</p>
+                    <p>Payment Method :</p>
+                    <p>Payment Amount :</p>
+                  </div>
+                  <div className={styles.appointmentInfoRight}>
+                    <p>12:00 PM</p>
+                    <p>31 aug 2023</p>
+                    <p>Debit Card</p>
+                    <p>$ 200</p>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className={styles.userContainer}>
+                <div>
+                  <h3>Client Info</h3>
+                  <div className={styles.userInfo}>
+                    <div>
+                      {" "}
+                      <img
+                        src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className={styles.info}>
+                      <div className={styles.userInfoLeft}>
+                        <p>Client name :</p>
+                        <p>Contact no :</p>
+                        <p>Address :</p>
+                      </div>
+                      <div className={styles.userInfoRight}>
+                        <p>Brooklyn Simmons</p>
+                        <p>(319) 555-0115</p>
+                        <p> Elgin St. Celina</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              gap: 20,
+              position: "absolute",
+              bottom: 10,
+            }}
+          >
+            <Button
+              block
+              style={{
+                background: "#F66D0F",
+                color: "white",
+                height: 50,
+                width: "220px",
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              block
+              style={{
+                background: "#F66D0F",
+                color: "white",
+                height: 50,
+                width: "220px",
+              }}
+            >
+              Print
+            </Button>
+          </div>
+        </div>
+      )}
       {props.hostData && (
         <div>
           <div
