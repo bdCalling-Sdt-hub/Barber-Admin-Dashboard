@@ -9,16 +9,16 @@ const { Title, Text } = Typography;
 
 const SubscriptionHistoryTable = () => {
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
-  const [earningData, setEarningData] = useState(null);
+  const [subscriptionData, setSubscriptionData] = useState(null);
 
   const showDrawer = (record) => {
     setIsDrawerVisible(true);
-    setEarningData(record);
+    setSubscriptionData(record);
   };
 
   const closeDrawer = () => {
     setIsDrawerVisible(false);
-    setEarningData(null);
+    setSubscriptionData(null);
   };
 
   const data = [
@@ -26,27 +26,49 @@ const SubscriptionHistoryTable = () => {
       key: "1",
       transactionID: "1373700510",
       date: "18 Jul, 2023  4:30pm",
-      username: "Sahinur Islam",
+      provider: "Sahinur Islam",
+      package: "Diamond",
       amount: "$850.00",
       action: "Button",
     },
     {
-      key: "2",
+      key: "1",
       transactionID: "1373700510",
       date: "18 Jul, 2023  4:30pm",
-      username: "Sahinur Islam",
+      provider: "Sahinur Islam",
+      package: "Gold",
       amount: "$850.00",
       action: "Button",
     },
     {
-      key: "3",
+      key: "1",
       transactionID: "1373700510",
       date: "18 Jul, 2023  4:30pm",
-      username: "Sahinur Islam",
+      provider: "Sahinur Islam",
+      package: "Diamond",
+      amount: "$850.00",
+      action: "Button",
+    },
+    {
+      key: "1",
+      transactionID: "1373700510",
+      date: "18 Jul, 2023  4:30pm",
+      provider: "Sahinur Islam",
+      package: "Diamond",
+      amount: "$850.00",
+      action: "Button",
+    },
+    {
+      key: "1",
+      transactionID: "1373700510",
+      date: "18 Jul, 2023  4:30pm",
+      provider: "Sahinur Islam",
+      package: "Diamond",
       amount: "$850.00",
       action: "Button",
     },
   ];
+
   const columns = [
     {
       title: "TRANSACTION ID",
@@ -60,9 +82,15 @@ const SubscriptionHistoryTable = () => {
       responsive: ["md"],
     },
     {
-      title: "USER NAME",
-      dataIndex: "username",
-      key: "username",
+      title: "PROVIDER",
+      dataIndex: "provider",
+      key: "provider",
+      responsive: ["lg"],
+    },
+    {
+      title: "PACKAGE",
+      dataIndex: "package",
+      key: "package",
       responsive: ["lg"],
     },
     {
@@ -109,7 +137,7 @@ const SubscriptionHistoryTable = () => {
           >
             <Typography>
               <Title level={5} strong>
-                Invoice# No.{earningData?.transactionID}
+                Invoice# No.{subscriptionData?.transactionID}
               </Title>
               <Text>See all details about this transaction</Text>
             </Typography>
@@ -122,9 +150,9 @@ const SubscriptionHistoryTable = () => {
         placement="right"
         onClose={closeDrawer}
         open={isDrawerVisible}
-        width={500}
+        width={550}
       >
-        {earningData && <DrawerPage earningData={earningData} />}
+        {subscriptionData && <DrawerPage subscriptionData={subscriptionData} />}
       </Drawer>
     </div>
   );

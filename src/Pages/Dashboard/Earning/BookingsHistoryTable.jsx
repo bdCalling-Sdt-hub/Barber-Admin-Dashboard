@@ -121,6 +121,7 @@ const BookingsHistoryTable = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
+              
             }}
           >
             <Typography>
