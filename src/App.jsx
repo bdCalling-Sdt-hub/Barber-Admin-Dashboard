@@ -24,6 +24,7 @@ import Bookings from "./Pages/Dashboard/Earning/Bookings";
 import Subscription from "./Pages/Dashboard/Earning/Subscription";
 import ProviderList from "./Pages/Dashboard/ProviderList/ProviderList";
 import ProviderRequest from "./Pages/Dashboard/ProviderRequest/ProviderRequest";
+import ProviderSubscription from "./Pages/Dashboard/ProviderSubscription/ProviderSubscription";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
               <Route path="/salonlist" element={<SalonList />} />
               <Route path="/providerList" element={<ProviderList />} />
               <Route path="/provider-request" element={<ProviderRequest />} />
+              <Route path="/provider-subscription" element={<ProviderSubscription />} />
               <Route path="/userlist" element={<UserList />} />
               <Route path="/barbarlist" element={<BarbarList />} />
               <Route path="/message" element={<Message />} />

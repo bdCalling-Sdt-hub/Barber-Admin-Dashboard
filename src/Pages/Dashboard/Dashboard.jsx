@@ -2,7 +2,7 @@
 import { MenuOutlined, SettingOutlined } from "@ant-design/icons";
 import { Button, Dropdown, Layout, Menu, Select, theme } from "antd";
 import { Divider } from "antd";
-import { GiReceiveMoney } from "react-icons/gi";
+import { GiChessQueen, GiReceiveMoney } from "react-icons/gi";
 import { MdOutlineGroupAdd, MdPayment } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 import { FaUsers } from "react-icons/fa";
@@ -294,10 +294,14 @@ const Dashboard = () => {
           </SubMenu> */}
           <Menu.Item
             key="64"
-            icon={<BsFillBookmarkCheckFill  style={{ fontSize: "14px", color: "white" }} />}
+            icon={
+              <BsFillBookmarkCheckFill
+                style={{ fontSize: "14px", color: "white" }}
+              />
+            }
           >
             <Link to="/appointmentlist" style={{ fontSize: "16px" }}>
-            Appointments 
+              Appointments
             </Link>
           </Menu.Item>
 
@@ -315,16 +319,28 @@ const Dashboard = () => {
             icon={<FaUsers style={{ fontSize: "14px", color: "white" }} />}
           >
             <Link to="/providerList" style={{ fontSize: "16px" }}>
-            Provider list
+              Provider list
             </Link>
           </Menu.Item>
 
           <Menu.Item
             key="7"
-            icon={<MdOutlineGroupAdd style={{ fontSize: "14px", color: "white" }} />}
+            icon={
+              <MdOutlineGroupAdd style={{ fontSize: "14px", color: "white" }} />
+            }
           >
             <Link to="/provider-request" style={{ fontSize: "16px" }}>
-             Provider Request
+              Provider Request
+            </Link>
+          </Menu.Item>
+          <Menu.Item
+            key="57"
+            icon={
+              <GiChessQueen style={{ fontSize: "14px", color: "white" }} />
+            }
+          >
+            <Link to="/provider-subscription" style={{ fontSize: "16px" }}>
+              Provider subscription
             </Link>
           </Menu.Item>
 
