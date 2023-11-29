@@ -5,8 +5,11 @@ import React, { useState } from "react";
 import { LiaEditSolid } from "react-icons/lia";
 const dateFormat = "YYYY-MM-DD";
 
+const { TextArea } = Input;
+
 const PersonalInfo = () => {
   const [profileEdit, setProfileEdit] = useState(false);
+  const [value, setValue] = useState("");
 
   const handleChange = () => {
     setProfileEdit(true);
@@ -51,16 +54,17 @@ const PersonalInfo = () => {
               marginBottom: "20px",
             }}
           >
-            <div style={{ display: "flex", gap: "20px" }}>
-              <Image
-                width={200}
-                style={{ borderRadius: "6px" }}
-                src="https://yt3.googleusercontent.com/Qy5Gk9hccQxiZdX8IxdK-mF2ktN17gap3ZkGQZkGz8NB4Yep3urmucp5990H2tjXIISgUoYssJE=s900-c-k-c0x00ffffff-no-rj"
-              />
-              <div>
-                <h2>Sahinur</h2>
-                <p>@sahinur</p>
-                <p>INE: GMVLMR80070501M100</p>
+            <div>
+              <div style={{ display: "flex", gap: "20px" }}>
+                <Image
+                  width={200}
+                  style={{ borderRadius: "6px" }}
+                  src="https://yt3.googleusercontent.com/Qy5Gk9hccQxiZdX8IxdK-mF2ktN17gap3ZkGQZkGz8NB4Yep3urmucp5990H2tjXIISgUoYssJE=s900-c-k-c0x00ffffff-no-rj"
+                />
+                <div style={{ marginTop: "50px" }}>
+                  <h2>Sahinur</h2>
+                  <p>ckctm12@gmail.com</p>
+                </div>
               </div>
             </div>
             <div>
@@ -84,53 +88,40 @@ const PersonalInfo = () => {
               <label htmlFor="">Name</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"Sahinur Islam"}
+                defaultValue={"Jane Cooper"}
                 readOnly
               />
             </Col>
           </Row>
-          <Row gutter={15} style={{ marginBottom: "15px" }}>
-            <Col span={12}>
+          <Row style={{ marginBottom: "15px" }}>
+            <Col span={24}>
               <label htmlFor="">Email</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"infosahinur@gmail.com"}
+                defaultValue={"jane.07@gmail.com"}
                 readOnly
-              />
-            </Col>
-            <Col span={12}>
-              <label htmlFor="">Phone Number</label>
-              <Input
-                style={{ height: "45px" }}
-                defaultValue={"01646524028"}
-                readOnly
-              />
-            </Col>
-          </Row>
-          <Row gutter={15} style={{ marginBottom: "15px" }}>
-            <Col span={12}>
-              <label htmlFor="">INE</label>
-              <Input
-                style={{ height: "45px" }}
-                defaultValue={"GMVLMR80070501M100"}
-                readOnly
-              />
-            </Col>
-            <Col span={12}>
-              <label htmlFor="">Date of Birth</label>
-              <DatePicker
-                style={{ height: "45px", width: "100%" }}
-                defaultValue={dayjs("2023-08-27", dateFormat)}
-                disabled
               />
             </Col>
           </Row>
           <Row style={{ marginBottom: "15px" }}>
             <Col span={24}>
               <label htmlFor="">Address</label>
+
+              <TextArea
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                placeholder="Enter your address here"
+                autoSize={{ minRows: 3, maxRows: 5 }}
+                defaultValue={"2972 Westheimer Rd. Santa Ana, Illinois 85486 "}
+              />
+            </Col>
+          </Row>
+          <Row style={{ marginBottom: "15px" }}>
+            <Col span={24}>
+              <label htmlFor="">Phone Number</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"Badda,Dhaka"}
+                defaultValue={"(406) 555-0120"}
                 readOnly
               />
             </Col>
@@ -162,8 +153,7 @@ const PersonalInfo = () => {
 
               <div>
                 <h2>Sahinur</h2>
-                <p>@sahinur</p>
-                <p>INE: GMVLMR80070501M100</p>
+                <p>example@gmail.com</p>
               </div>
             </div>
           </div>
@@ -171,44 +161,43 @@ const PersonalInfo = () => {
           <Row style={{ marginBottom: "15px" }}>
             <Col span={24}>
               <label htmlFor="">Name</label>
-              <Input style={{ height: "45px" }} defaultValue={"Fahim"} />
+              <Input
+                style={{ height: "45px" }}
+                defaultValue={"Jane Cooper"}
+                readOnly
+              />
             </Col>
           </Row>
-          <Row gutter={15} style={{ marginBottom: "15px" }}>
-            <Col span={12}>
+          <Row style={{ marginBottom: "15px" }}>
+            <Col span={24}>
               <label htmlFor="">Email</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"infosahinur@gmail.com"}
-              />
-            </Col>
-            <Col span={12}>
-              <label htmlFor="">Phone Number</label>
-              <Input style={{ height: "45px" }} defaultValue={"01788215840"} />
-            </Col>
-          </Row>
-          <Row gutter={15} style={{ marginBottom: "15px" }}>
-            <Col span={12}>
-              <label htmlFor="">INE</label>
-              <Input
-                style={{ height: "45px" }}
-                defaultValue={"GMVLMR80070501M100"}
-              />
-            </Col>
-            <Col span={12}>
-              <label htmlFor="">Date of Birth</label>
-              <DatePicker
-                style={{ height: "45px", width: "100%" }}
-                defaultValue={dayjs("2023-08-27", dateFormat)}
+                defaultValue={"jane.07@gmail.com"}
+                readOnly
               />
             </Col>
           </Row>
           <Row style={{ marginBottom: "15px" }}>
             <Col span={24}>
               <label htmlFor="">Address</label>
+
+              <TextArea
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                placeholder="Enter your address here"
+                autoSize={{ minRows: 3, maxRows: 5 }}
+                defaultValue={"2972 Westheimer Rd. Santa Ana, Illinois 85486 "}
+              />
+            </Col>
+          </Row>
+          <Row style={{ marginBottom: "15px" }}>
+            <Col span={24}>
+              <label htmlFor="">Phone Number</label>
               <Input
                 style={{ height: "45px" }}
-                defaultValue={"Mogbazer,Dhaka"}
+                defaultValue={"(406) 555-0120"}
+                readOnly
               />
             </Col>
           </Row>
