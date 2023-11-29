@@ -22,6 +22,7 @@ import AppointmentReq from "./Pages/Dashboard/Appointment/AppointmentReq";
 import NotFound from "./404";
 import Bookings from "./Pages/Dashboard/Earning/Bookings";
 import Subscription from "./Pages/Dashboard/Earning/Subscription";
+import ProviderList from "./Pages/Dashboard/ProviderList/ProviderList";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
               <Route path="/appointmentlist" element={<AppointmentList />} />
               {/* <Route path="/appointmentreq" element={<AppointmentReq />} /> */}
               <Route path="/salonlist" element={<SalonList />} />
+              <Route path="/providerList" element={<ProviderList />} />
               <Route path="/userlist" element={<UserList />} />
               <Route path="/barbarlist" element={<BarbarList />} />
               <Route path="/message" element={<Message />} />

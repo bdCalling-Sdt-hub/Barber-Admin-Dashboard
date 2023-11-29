@@ -3,7 +3,7 @@ import { MenuOutlined, SettingOutlined } from "@ant-design/icons";
 import { Button, Dropdown, Layout, Menu, Select, theme } from "antd";
 import { Divider } from "antd";
 import { GiReceiveMoney } from "react-icons/gi";
-import { MdPayment } from "react-icons/md";
+import { MdOutlineGroupAdd, MdPayment } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 import { FaUsers } from "react-icons/fa";
 import { IoWalletOutline, IoCutOutline } from "react-icons/io5";
@@ -311,11 +311,20 @@ const Dashboard = () => {
           </Menu.Item>
 
           <Menu.Item
-            key="7"
+            key="61"
             icon={<FaUsers style={{ fontSize: "14px", color: "white" }} />}
           >
-            <Link to="/barbarlist" style={{ fontSize: "16px" }}>
-              {t("barberList")}
+            <Link to="/providerList" style={{ fontSize: "16px" }}>
+            Provider list
+            </Link>
+          </Menu.Item>
+
+          <Menu.Item
+            key="7"
+            icon={<MdOutlineGroupAdd style={{ fontSize: "14px", color: "white" }} />}
+          >
+            <Link to="/provider-request" style={{ fontSize: "16px" }}>
+             Provider Request
             </Link>
           </Menu.Item>
 

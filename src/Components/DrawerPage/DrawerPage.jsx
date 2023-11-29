@@ -848,6 +848,121 @@ const DrawerPage = (props) => {
           </div>
         </div>
       )}
+      {props.providerData && (
+        <div className={styles.userContainer}>
+          <div style={{ marginBottom: "30px" }}>
+            <h3>Provider Info</h3>
+            <div className={styles.userInfo} style={{ display: "flex" }}>
+              <div>
+                {" "}
+                <img src="https://i.ibb.co/x7CMg2K/Rectangle-2519.png" alt="" />
+              </div>
+              <div className={styles.infoUserData}>
+                <div className={styles.salonInfoLeftUserData}>
+                  <p>Provider name :</p>
+                  <p>Contact no :</p>
+                  <p>Address :</p>
+                  <p>Services :</p>
+                </div>
+                <div className={styles.salonInfoRightUserData}>
+                  <p>Apple Green</p>
+                  <p>(+880) 1711 145865</p>
+                  <p>6391 Elgin St. Celina</p>
+                  <p>Haircut, shaving</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{ marginBottom: "30px" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginTop: "50x",
+              }}
+            >
+              <h3>Current package:</h3> <h3>Gold</h3>
+            </div>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+              }}
+            >
+              {[1, 2, 3, 4, 5].map((item, index) => (
+                <div key={index}>
+                  <div
+                    style={{
+                      padding: "10px",
+                      border: "1px solid #F66D0F",
+                      width: "190px",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <img
+                      style={{ width: "155px" }}
+                      src="https://i.ibb.co/xz27ZPN/Rectangle-2059.png"
+                      alt=""
+                    />
+                    <p
+                      style={{
+                        textAlign: "center",
+                        marginTop: "10px",
+                        color: "#F66D0F",
+                      }}
+                    >
+                      Spa
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: 60,
+              position: "absolute",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "0 auto",
+              bottom: 10,
+            }}
+          >
+            <Button
+              block
+              style={{
+                backgroundColor: "transparent !important",
+                border: "1px solid #F66D0F",
+                color: "white",
+                height: 50,
+                width: "370px",
+              }}
+            >
+              Cancel Appointment
+            </Button>
+            <Button
+              block
+              style={{
+                background: "#F66D0F",
+                color: "white",
+                height: 50,
+                width: "370px",
+              }}
+            >
+              Print
+            </Button>
+          </div>
+        </div>
+      )}
     </>
   );
 };
