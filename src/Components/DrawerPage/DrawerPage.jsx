@@ -393,6 +393,62 @@ const DrawerPage = (props) => {
           </div>
         </div>
       )}
+      {props.providerRequestData && (
+        <div>
+          <div style={{ display: "flex", gap: "15px" }}>
+            <div className={styles.appointmentMainContainer}>
+              <div>
+                <h3>Provider Information</h3>
+                <div className={styles.appointmentInfo}>
+                  <div className={styles.appointmentInfoLeft}>
+                    <p>Business name</p>
+                    <p>Provider name</p>
+                    <p>Time</p>
+                    <p>Date</p>
+                  </div>
+                  <div className={styles.appointmentInfoRight}>
+                    <p>Hair Force Salon</p>
+                    <p>Jane Cooper</p>
+                    <p>12:00 PM</p>
+                    <p>31 aug 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              gap: 20,
+              position: "absolute",
+              bottom: 10,
+            }}
+          >
+            <Button
+              block
+              style={{
+                background: "#F66D0F",
+                color: "white",
+                height: 50,
+                width: "220px",
+              }}
+            >
+              Cancel
+            </Button>
+            <Button
+              block
+              style={{
+                background: "#F66D0F",
+                color: "white",
+                height: 50,
+                width: "220px",
+              }}
+            >
+              Approve
+            </Button>
+          </div>
+        </div>
+      )}
       {props.subscriptionData && (
         <div>
           <div style={{ display: "flex", gap: "15px" }}>

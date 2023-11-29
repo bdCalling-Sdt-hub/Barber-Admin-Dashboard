@@ -240,7 +240,8 @@ const InvoiceTable = () => {
                 height: "50px",
                 width: "50px",
                 textAlign: "center",
-                border:"2px solid white"
+                border:"2px solid white",
+                cursor: "pointer",
               }}
               onClick={closeDrawer}
             >
