@@ -384,7 +384,7 @@ const Dashboard = () => {
             className={Styles.notificatonProfileSection}
             style={{ display: "flex", alignItems: "center", lineHeight: 0 }}
           >
-            <div className="" style={{ marginRight: "40px" }}>
+            {/* <div className="" style={{ marginRight: "40px" }}>
               <Select
                 value={selectedLanguage}
                 style={{ width: 150 }}
@@ -410,7 +410,7 @@ const Dashboard = () => {
                   </div>
                 </Option>
               </Select>
-            </div>
+            </div> */}
             <div className={Styles.notificaton}>
               <Dropdown
                 overlay={menu}
