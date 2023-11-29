@@ -92,11 +92,11 @@ const Wallet = () => {
   };
   const data = [
     {
-      type: "Total Income",
+      type: "Subscription",
       value: 500000,
     },
     {
-      type: "Total Cost",
+      type: "Bookings",
       value: 451500,
     },
   ];
@@ -137,7 +137,7 @@ const Wallet = () => {
       <h2
         style={{ fontSize: "25px", marginBottom: "10px", fontWeight: "normal" }}
       >
-        Renti's Wallet
+       Atyose’s Wallet
       </h2>
 
       <Row style={{ marginTop: "20px" }} gutter={24}>
