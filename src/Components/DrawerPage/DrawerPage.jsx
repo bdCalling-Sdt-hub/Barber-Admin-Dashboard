@@ -683,19 +683,23 @@ const DrawerPage = (props) => {
           <div style={{ display: "flex", gap: "15px" }}>
             <div className={styles.appointmentMainContainer}>
               <div>
-                <h3>Appointment Info</h3>
+                <h3>Appointment Information</h3>
                 <div className={styles.appointmentInfo}>
                   <div className={styles.appointmentInfoLeft}>
-                    <p>Appointment Status :</p>
-                    <p>Date & Time :</p>
-                    <p>Total amount :</p>
-                    <p>Barber payment :</p>
+                    <p>Salon name :</p>
+                    <p>Services :</p>
+                    <p>Time :</p>
+                    <p>Date :</p>
+                    <p>Payment Method :</p>
+                    <p>Payment Amount :</p>
                   </div>
                   <div className={styles.appointmentInfoRight}>
-                    <p>Completed</p>
-                    <p>06 Sep, 2023- 4:30 PM</p>
-                    <p>$120</p>
-                    <p>$50</p>
+                    <p>Hair Force Salon</p>
+                    <p>Haircut, Shaving</p>
+                    <p>12:00 PM</p>
+                    <p>31 aug 2023</p>
+                    <p>Debit Card</p>
+                    <p>$ 200</p>
                   </div>
                 </div>
               </div>
@@ -729,7 +733,7 @@ const DrawerPage = (props) => {
               <hr />
               <div className={styles.userContainer}>
                 <div>
-                  <h3>Barber Info</h3>
+                  <h3>Provider Info</h3>
                   <div className={styles.userInfo}>
                     <div>
                       {" "}
@@ -740,7 +744,7 @@ const DrawerPage = (props) => {
                     </div>
                     <div className={styles.info}>
                       <div className={styles.userInfoLeft}>
-                        <p>Barber name :</p>
+                        <p>Provider name :</p>
                         <p>Contact no :</p>
                         <p>Address :</p>
                       </div>
@@ -766,13 +770,14 @@ const DrawerPage = (props) => {
             <Button
               block
               style={{
-                background: "#F66D0F",
+                backgroundColor: "transparent !important",
+                border: "1px solid #F66D0F",
                 color: "white",
                 height: 50,
                 width: "220px",
               }}
             >
-              Download
+              Cancel Appointment
             </Button>
             <Button
               block

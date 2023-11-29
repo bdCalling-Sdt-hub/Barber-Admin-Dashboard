@@ -14,6 +14,7 @@ import { useTranslation } from "react-i18next";
 import { Link, Outlet } from "react-router-dom";
 import rentiLogo from "../../Images/renti-logo.png";
 import Styles from "./Dashboard.module.css";
+import { BsFillBookmarkCheckFill } from "react-icons/bs";
 
 const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
@@ -255,7 +256,7 @@ const Dashboard = () => {
               <Link to="/earning/subscription">- Subscription</Link>
             </Menu.Item>
           </SubMenu>
-{/* 
+          {/* 
           <Menu.Item
             key="3"
             icon={<MdPayment style={{ fontSize: "14px", color: "white" }} />}
@@ -271,12 +272,12 @@ const Dashboard = () => {
             }
           >
             <Link to="/wallet" style={{ fontSize: "16px" }}>
-              {t("wallet")}
+              Wallet
             </Link>
           </Menu.Item>
           <Divider />
 
-          <SubMenu
+          {/* <SubMenu
             style={{ fontSize: "16px" }}
             key="5"
             icon={
@@ -290,7 +291,15 @@ const Dashboard = () => {
             <Menu.Item key="40">
               <Link to="/appointmentreq">{t("appointment.subTitle2")}</Link>
             </Menu.Item>
-          </SubMenu>
+          </SubMenu> */}
+          <Menu.Item
+            key="64"
+            icon={<BsFillBookmarkCheckFill  style={{ fontSize: "14px", color: "white" }} />}
+          >
+            <Link to="/appointmentlist" style={{ fontSize: "16px" }}>
+            Appointments 
+            </Link>
+          </Menu.Item>
 
           <Menu.Item
             key="6"

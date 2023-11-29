@@ -14,7 +14,7 @@ function AppointmentList() {
             <Input
               className={styles.searchMessageInput}
               size="large"
-              placeholder="Search by name/email/phone"
+              placeholder="Search"
               prefix={<SearchOutlined style={{ color: "#CFCFD0" }} />}
             />
             <Button

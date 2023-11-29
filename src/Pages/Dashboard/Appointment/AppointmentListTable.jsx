@@ -53,51 +53,72 @@ function AppointmentListTable() {
   const data = [
     {
       key: "1",
-      invoiceNo: "1370510",
+      appNo: "1370510",
       time: "18 Jul, 2023  4:30pm",
-      solonaname: "Wade Warren",
-      customername: "Sahinur Islam",
+      providername: "Wade Warren",
+      clientname: "Sahinur Islam",
       amount: "$850.00",
       status: "complete",
       printView: "Button",
     },
     {
-      key: "2",
-      invoiceNo: "1370510",
+      key: "1",
+      appNo: "1370510",
       time: "18 Jul, 2023  4:30pm",
-      solonaname: "Wade Warren",
-      customername: "Sahinur Islam",
-      amount: "$850.00",
-      status: "pending",
-      printView: "Button",
-    },
-    {
-      key: "3",
-      invoiceNo: "1370510",
-      time: "18 Jul, 2023  4:30pm",
-      solonaname: "Wade Warren",
-      customername: "Sahinur Islam",
+      providername: "Wade Warren",
+      clientname: "Sahinur Islam",
       amount: "$850.00",
       status: "complete",
       printView: "Button",
     },
     {
-      key: "4",
-      invoiceNo: "1370510",
+      key: "1",
+      appNo: "1370510",
       time: "18 Jul, 2023  4:30pm",
-      solonaname: "Wade Warren",
-      customername: "Sahinur Islam",
+      providername: "Wade Warren",
+      clientname: "Sahinur Islam",
       amount: "$850.00",
       status: "complete",
       printView: "Button",
     },
+    {
+      key: "1",
+      appNo: "1370510",
+      time: "18 Jul, 2023  4:30pm",
+      providername: "Wade Warren",
+      clientname: "Sahinur Islam",
+      amount: "$850.00",
+      status: "complete",
+      printView: "Button",
+    },
+    {
+      key: "1",
+      appNo: "1370510",
+      time: "18 Jul, 2023  4:30pm",
+      providername: "Wade Warren",
+      clientname: "Sahinur Islam",
+      amount: "$850.00",
+      status: "complete",
+      printView: "Button",
+    },
+    {
+      key: "1",
+      appNo: "1370510",
+      time: "18 Jul, 2023  4:30pm",
+      providername: "Wade Warren",
+      clientname: "Sahinur Islam",
+      amount: "$850.00",
+      status: "complete",
+      printView: "Button",
+    },
+  
   ];
 
   const columns = [
     {
-      title: "Invoice",
-      dataIndex: "invoiceNo",
-      key: "invoiceNo",
+      title: "APP. NO",
+      dataIndex: "appNo",
+      key: "appNo",
     },
     {
       title: "TIME",
@@ -106,15 +127,15 @@ function AppointmentListTable() {
       responsive: ["md"],
     },
     {
-      title: "SOLONA NAME",
-      dataIndex: "solonaname",
-      key: "solonaname",
+      title: "PROVIDER NAME",
+      dataIndex: "providername",
+      key: "providername",
       responsive: ["md"],
     },
     {
-      title: "CUSTOMER NAME",
-      dataIndex: "customername",
-      key: "customername",
+      title: "CLIENT NAME",
+      dataIndex: "clientname",
+      key: "clientname",
       responsive: ["lg"],
     },
     {
@@ -199,16 +220,16 @@ function AppointmentListTable() {
           <div>
             <Typography>
               <Title level={5} strong>
-                Invoice# Trip No.68656
+              Appointment No- #M061206
               </Title>
-              <Text>See all information about the trip no. 68656</Text>
+              <Text>See all details about this appointment</Text>
             </Typography>
           </div>
         }
         placement="right"
         onClose={closeDrawer}
         open={isDrawerVisible}
-        width={500}
+        width={550}
         closable={false}
         extra={
           <Space 
