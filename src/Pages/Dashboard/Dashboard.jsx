@@ -5,7 +5,7 @@ import { Divider } from "antd";
 import { GiChessQueen, GiReceiveMoney } from "react-icons/gi";
 import { MdOutlineGroupAdd, MdPayment } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
-import { FaUsers } from "react-icons/fa";
+import { FaListUl, FaUsers } from "react-icons/fa";
 import { IoWalletOutline, IoCutOutline } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { TbCalendarCheck, TbMessageCircle2Filled } from "react-icons/tb";
@@ -335,9 +335,7 @@ const Dashboard = () => {
           </Menu.Item>
           <Menu.Item
             key="57"
-            icon={
-              <GiChessQueen style={{ fontSize: "14px", color: "white" }} />
-            }
+            icon={<GiChessQueen style={{ fontSize: "14px", color: "white" }} />}
           >
             <Link to="/provider-subscription" style={{ fontSize: "16px" }}>
               Provider subscription
@@ -356,13 +354,13 @@ const Dashboard = () => {
           <Menu.Item
             key="9"
             icon={
-              <TbMessageCircle2Filled
+              <FaListUl
                 style={{ fontSize: "14px", color: "white" }}
               />
             }
           >
-            <Link to="/message" style={{ fontSize: "16px" }}>
-              {t("message")}
+            <Link to="/categories" style={{ fontSize: "16px" }}>
+              Categories
             </Link>
           </Menu.Item>
 

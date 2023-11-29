@@ -25,6 +25,7 @@ import Subscription from "./Pages/Dashboard/Earning/Subscription";
 import ProviderList from "./Pages/Dashboard/ProviderList/ProviderList";
 import ProviderRequest from "./Pages/Dashboard/ProviderRequest/ProviderRequest";
 import ProviderSubscription from "./Pages/Dashboard/ProviderSubscription/ProviderSubscription";
+import Categories from "./Pages/Dashboard/Categories/Categories";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
               path="/"
               element={
                 <PrivateRoute>
-                  <Dashboard />
+                  <Dashboard/>
                 </PrivateRoute>
               }
             >
@@ -52,6 +53,7 @@ function App() {
               <Route path="/providerList" element={<ProviderList />} />
               <Route path="/provider-request" element={<ProviderRequest />} />
               <Route path="/provider-subscription" element={<ProviderSubscription />} />
+              <Route path="/categories" element={<Categories />} />
               <Route path="/userlist" element={<UserList />} />
               <Route path="/barbarlist" element={<BarbarList />} />
               <Route path="/message" element={<Message />} />
