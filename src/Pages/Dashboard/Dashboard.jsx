@@ -310,7 +310,7 @@ const Dashboard = () => {
             icon={<IoCutOutline style={{ fontSize: "14px", color: "white" }} />}
           >
             <Link to="/salonlist" style={{ fontSize: "16px" }}>
-              {t("solonaList")}
+            Salon List
             </Link>
           </Menu.Item>
 
