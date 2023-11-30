@@ -836,8 +836,7 @@ const DrawerPage = (props) => {
             <Button
               block
               style={{
-                backgroundColor: "transparent !important",
-                border: "1px solid #F66D0F",
+                background: "#F66D0F",
                 color: "white",
                 height: 50,
                 width: "220px",
@@ -1006,8 +1005,7 @@ const DrawerPage = (props) => {
             <Button
               block
               style={{
-                backgroundColor: "transparent !important",
-                border: "1px solid #F66D0F",
+                background: "#F66D0F",
                 color: "white",
                 height: 50,
                 width: "370px",
