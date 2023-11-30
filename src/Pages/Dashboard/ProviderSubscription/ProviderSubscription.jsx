@@ -70,7 +70,7 @@ function ProviderSubscription() {
 
   return (
     <div>
-      <h3>Packages</h3>
+      <h2>Packages</h2>
       <div className={styles.packagesContainer}>
         <div className={styles.packageCard}>
           <div>
