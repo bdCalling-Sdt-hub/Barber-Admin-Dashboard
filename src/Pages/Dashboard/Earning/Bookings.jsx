@@ -29,7 +29,7 @@ function Bookings() {
             className={style.card}
           >
             <div>
-              <h2 className={style.cardTitle}>$ 110</h2>
+              <h2 className={style.cardTitle}> 110</h2>
               <div className={style.statusTitle}>
                 <svg
                   width="28"
@@ -93,7 +93,7 @@ function Bookings() {
             className={style.card}
           >
             <div>
-              <h2 className={style.cardTitle}>$ 260</h2>
+              <h2 className={style.cardTitle}>260</h2>
               <div className={style.statusTitle}>
                 <svg
                   width="26"
@@ -133,7 +133,7 @@ function Bookings() {
             className={style.card}
           >
             <div>
-              <h2 className={style.cardTitle}>$ 1120</h2>
+              <h2 className={style.cardTitle}>1120</h2>
               <div className={style.statusTitle}>
                 <svg
                   width="28"
