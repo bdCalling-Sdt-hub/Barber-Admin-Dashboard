@@ -40,49 +40,44 @@ const Signin = () => {
           onFinish={onFinish}
         >
           <div>
-            <label htmlFor="email" className={style.label}>
-              Email
+            <label htmlFor="" className={style.label}>
+            Email
             </label>
             <Form.Item
               name="email"
-              id="email"
-              rules={[
-                {
-                  required: true,
-                  message: "Please input your email!",
-                },
-              ]}
+    
             >
               <Input
-                prefix={<MailOutlined className="site-form-item-icon" />}
-                placeholder="Enter your email address"
                 type="email"
+                placeholder="Enter your Email"
                 className={style.input}
               />
             </Form.Item>
           </div>
 
           <div>
-            <label htmlFor="email" className={style.label}>
-              Password
+            <label htmlFor="" className={style.label}>
+          Password
             </label>
             <Form.Item
               name="password"
               rules={[
                 {
                   required: true,
-                  message: "Please input your Password!",
+                  message: "Please enter confirm Password!",
                 },
               ]}
             >
-              <Input.Password
-                prefix={<LockOutlined className="site-form-item-icon" />}
-                type="password"
+              <Input
+                type="passowrd"
                 placeholder="Enter your password"
                 className={style.input}
               />
             </Form.Item>
           </div>
+
+          {/* showing error */}
+          {/* <label style={{ color: "red" }}>{err}</label> */}
           <div className={style.rememberAndPass}>
             <div></div>
             <a
@@ -96,7 +91,7 @@ const Signin = () => {
           </div>
 
           <Form.Item>
-            <Button
+          <Button
               type="primary"
               htmlType="submit"
               onClick={() => {
@@ -108,13 +103,14 @@ const Signin = () => {
                 fontWeight: "400px",
                 fontSize: "18px",
                 background: "#F66D0F",
-                marginTop: "30px",
+                marginTop: "20px",
               }}
             >
               Sign In
             </Button>
           </Form.Item>
         </Form>
+
       </div>
     </div>
   );
