@@ -6,6 +6,9 @@ import LoginActivity from "../../../../Components/Setting/LoginActivity/LoginAct
 import PersonalInfo from "../../../../Components/Setting/PersonalInfo/PersonalInfo";
 import PrivacyPolicy from "../../../../Components/Setting/PrivacyPolicy/PrivacyPolicy";
 import TermsAndCondition from "../../../../Components/Setting/TermsAndCondition/TermsAndCondition";
+import BlockList from "../../../../Components/Setting/BlockList/BlockList";
+import Reviews from "../../../../Components/Setting/Reviews/Reviews";
+import Trash from "../../../../Components/Setting/Trash/Trash";
 
 const SettingPage = () => {
   const params = useParams();
@@ -43,6 +46,9 @@ const SettingPage = () => {
         {text === "privacy policy" && <PrivacyPolicy />}
         {text === "terms condition" && <TermsAndCondition />}
         {text === "about us" && <About />}
+        {text === "block list" && <BlockList />}
+        {text === "reviews" && <Reviews />}
+        {text === "trash" && <Trash />}
       </div>
     </>
   );

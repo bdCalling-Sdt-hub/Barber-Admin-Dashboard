@@ -1,11 +1,21 @@
 /* eslint-disable no-unsafe-optional-chaining */
 /* eslint-disable react/prop-types */
-import { Badge, Button, Form, Input, Select, Typography } from "antd";
+import {
+  Badge,
+  Progress,
+  Button,
+  Form,
+  Input,
+  Select,
+  Typography,
+  Rate,
+} from "antd";
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import cardImg from "../../Images/Cards.png";
 import img from "../../Images/image 1.png";
 import styles from "./DrawerPage.module.css";
+import { IoStar } from "react-icons/io5";
 
 const { Title } = Typography;
 
@@ -1016,6 +1026,229 @@ const DrawerPage = (props) => {
             >
               Print
             </Button>
+          </div>
+        </div>
+      )}
+      {props.reviewsData && (
+        <div className={styles.userContainer}>
+          <div style={{ marginBottom: "30px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div>
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "5px" }}
+                >
+                  <p>5</p>
+                  <IoStar color="#F66D0F" />
+                  <Progress
+                    percent={50}
+                    // size={["100%", 20]}
+                    style={{ width: "300px", marginTop: "7px" }}
+                    showInfo={false}
+                    strokeColor={"#F66D0F"}
+                  />
+                </div>
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "5px" }}
+                >
+                  <p>4</p>
+                  <IoStar color="#F66D0F" />
+                  <Progress
+                    percent={40}
+                    // size={["100%", 20]}
+                    style={{ width: "300px", marginTop: "7px" }}
+                    showInfo={false}
+                    strokeColor={"#F66D0F"}
+                  />
+                </div>
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "5px" }}
+                >
+                  <p>3</p>
+                  <IoStar color="#F66D0F" />
+                  <Progress
+                    percent={30}
+                    // size={["100%", 20]}
+                    style={{ width: "300px", marginTop: "7px" }}
+                    showInfo={false}
+                    strokeColor={"#F66D0F"}
+                  />
+                </div>
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "5px" }}
+                >
+                  <p>2</p>
+                  <IoStar color="#F66D0F" />
+                  <Progress
+                    percent={20}
+                    // size={["100%", 20]}
+                    style={{ width: "300px", marginTop: "7px" }}
+                    showInfo={false}
+                    strokeColor={"#F66D0F"}
+                  />
+                </div>
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "5px" }}
+                >
+                  <p>1</p>
+                  <IoStar color="#F66D0F" />
+                  <Progress
+                    percent={10}
+                    // size={["100%", 20]}
+                    style={{ width: "300px", marginTop: "7px" }}
+                    showInfo={false}
+                    strokeColor={"#F66D0F"}
+                  />
+                </div>
+              </div>
+              <div style={{ marginTop: "50px" }}>
+                <h1 style={{ fontSize: "36px", textAlign: "right" }}>4.2</h1>
+                <Rate
+                  style={{ color: "#F66D0F" }}
+                  disabled
+                  defaultValue={4.5}
+                />
+                <p
+                  style={{
+                    fontSize: "14px",
+                    textAlign: "right",
+                    marginTop: "5px",
+                  }}
+                >
+                  52 Reviews
+                </p>
+              </div>
+            </div>
+            <div>
+              <div style={{ marginTop: "50px" }}>
+                <div style={{ display: "flex", gap: "10px" }}>
+                  <img
+                    style={{ borderRadius: "100%" }}
+                    src="https://i.ibb.co/dLsxtGJ/logo-3.png"
+                    alt=""
+                  />
+                  <div>
+                    <p>Courtney Henry</p>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "5px",
+                      }}
+                    >
+                      <Rate
+                        style={{ color: "#F66D0F" }}
+                        disabled
+                        defaultValue={4.5}
+                      />
+                      <p>2 mins ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p style={{ padding: "20px 0px" }}>
+                    Consequat velit qui adipisicing sunt do rependerit ad
+                    laborum tempor ullamco exercitation. Ullamco tempor
+                    adipisicing et voluptate duis sit esse aliqua
+                  </p>
+                  <p
+                    style={{
+                      color: "#FC4400",
+                      cursor: "pointer",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    Delete Review
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div style={{ marginTop: "50px" }}>
+                <div style={{ display: "flex", gap: "10px" }}>
+                  <img
+                    style={{ borderRadius: "100%" }}
+                    src="https://i.ibb.co/dLsxtGJ/logo-3.png"
+                    alt=""
+                  />
+                  <div>
+                    <p>Courtney Henry</p>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "5px",
+                      }}
+                    >
+                      <Rate
+                        style={{ color: "#F66D0F" }}
+                        disabled
+                        defaultValue={4.5}
+                      />
+                      <p>2 mins ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p style={{ padding: "20px 0px" }}>
+                    Consequat velit qui adipisicing sunt do rependerit ad
+                    laborum tempor ullamco exercitation. Ullamco tempor
+                    adipisicing et voluptate duis sit esse aliqua
+                  </p>
+                  <p
+                    style={{
+                      color: "#FC4400",
+                      cursor: "pointer",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    Delete Review
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div style={{ marginTop: "50px" }}>
+                <div style={{ display: "flex", gap: "10px" }}>
+                  <img
+                    style={{ borderRadius: "100%" }}
+                    src="https://i.ibb.co/dLsxtGJ/logo-3.png"
+                    alt=""
+                  />
+                  <div>
+                    <p>Courtney Henry</p>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "5px",
+                      }}
+                    >
+                      <Rate
+                        style={{ color: "#F66D0F" }}
+                        disabled
+                        defaultValue={4.5}
+                      />
+                      <p>2 mins ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p style={{ padding: "20px 0px" }}>
+                    Consequat velit qui adipisicing sunt do rependerit ad
+                    laborum tempor ullamco exercitation. Ullamco tempor
+                    adipisicing et voluptate duis sit esse aliqua
+                  </p>
+                  <p
+                    style={{
+                      color: "#FC4400",
+                      cursor: "pointer",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    Delete Review
+                  </p>
+                </div>
+              </div>
+        
+            </div>
           </div>
         </div>
       )}

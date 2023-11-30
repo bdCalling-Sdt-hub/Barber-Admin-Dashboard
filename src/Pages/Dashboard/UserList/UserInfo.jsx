@@ -38,7 +38,6 @@ const data = [
 ];
 
 const UserInfo = () => {
-  const [rentData, setRentData] = useState([]); // Data fetched from the server
   const [totalItems, setTotalItems] = useState(0); // Total number of items
   const [currentPage, setCurrentPage] = useState(1); // Current page number
   const pageSize = 12;
